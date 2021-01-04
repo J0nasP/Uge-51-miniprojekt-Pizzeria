@@ -1,0 +1,10 @@
+C:\Users\JonasP\source\repos\pizzaria App\pizzaria App\bin\Debug\pizzaria App.exe.config
+C:\Users\JonasP\source\repos\pizzaria App\pizzaria App\bin\Debug\pizzaria App.exe
+C:\Users\JonasP\source\repos\pizzaria App\pizzaria App\bin\Debug\pizzaria App.pdb
+C:\Users\JonasP\source\repos\pizzaria App\pizzaria App\obj\Debug\pizzaria App.csprojAssemblyReference.cache
+C:\Users\JonasP\source\repos\pizzaria App\pizzaria App\obj\Debug\pizzaria_App.Form1.resources
+C:\Users\JonasP\source\repos\pizzaria App\pizzaria App\obj\Debug\pizzaria_App.Properties.Resources.resources
+C:\Users\JonasP\source\repos\pizzaria App\pizzaria App\obj\Debug\pizzaria App.csproj.GenerateResource.cache
+C:\Users\JonasP\source\repos\pizzaria App\pizzaria App\obj\Debug\pizzaria App.csproj.CoreCompileInputs.cache
+C:\Users\JonasP\source\repos\pizzaria App\pizzaria App\obj\Debug\pizzaria App.exe
+C:\Users\JonasP\source\repos\pizzaria App\pizzaria App\obj\Debug\pizzaria App.pdb
