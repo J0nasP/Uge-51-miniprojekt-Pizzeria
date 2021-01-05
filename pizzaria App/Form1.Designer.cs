@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.Label stoerelse_60_skinke;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.skinke_pizza_billede = new System.Windows.Forms.PictureBox();
             this.peperoni_pizza_billede = new System.Windows.Forms.PictureBox();
             this.label_pizza_skinke = new System.Windows.Forms.Label();
@@ -38,7 +38,7 @@
             this.label_pizza_salat = new System.Windows.Forms.Label();
             this.skinke_pizza_beskrivelse = new System.Windows.Forms.Label();
             this.peperoni_pizza_beskrivelse = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label_salat_pizza_beskrivelse = new System.Windows.Forms.Label();
             this.stoerelse_60_peperoni = new System.Windows.Forms.Label();
             this.stoerelse_60_salat = new System.Windows.Forms.Label();
             this.stoerelse_90_skinke = new System.Windows.Forms.Label();
@@ -57,17 +57,39 @@
             this.Add_button_75_salat_pizza = new System.Windows.Forms.Button();
             this.Add_button_145_salat_pizza = new System.Windows.Forms.Button();
             this.bestillings_tabel = new System.Windows.Forms.TableLayoutPanel();
+            this.total_label = new System.Windows.Forms.Label();
+            this.pris_label = new System.Windows.Forms.Label();
+            this.vare_label = new System.Windows.Forms.Label();
             this.bestil_button = new System.Windows.Forms.Button();
             this.antal_label = new System.Windows.Forms.Label();
-            this.vare_label = new System.Windows.Forms.Label();
-            this.pris_label = new System.Windows.Forms.Label();
-            this.total_label = new System.Windows.Forms.Label();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.fatasi_pizza_beskrivelse = new System.Windows.Forms.Label();
+            this.vaelg_selv_pizza_label = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Add_button_155_fantasi_pizza = new System.Windows.Forms.Button();
+            this.Add_button_80_fantasi_pizza = new System.Windows.Forms.Button();
+            this.pris_155_fantasi = new System.Windows.Forms.Label();
+            this.pris_80_fantasi = new System.Windows.Forms.Label();
+            this.stoerelse_90_fantasi = new System.Windows.Forms.Label();
+            this.stoerelse_60_fantasi = new System.Windows.Forms.Label();
+            this.antal_listbox = new System.Windows.Forms.ListBox();
             stoerelse_60_skinke = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.skinke_pizza_billede)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peperoni_pizza_billede)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salat_pizza_billede)).BeginInit();
             this.bestillings_tabel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // stoerelse_60_skinke
+            // 
+            stoerelse_60_skinke.AutoSize = true;
+            stoerelse_60_skinke.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            stoerelse_60_skinke.Location = new System.Drawing.Point(346, 34);
+            stoerelse_60_skinke.Name = "stoerelse_60_skinke";
+            stoerelse_60_skinke.Size = new System.Drawing.Size(41, 13);
+            stoerelse_60_skinke.TabIndex = 10;
+            stoerelse_60_skinke.Text = "60 cm";
             // 
             // skinke_pizza_billede
             // 
@@ -148,24 +170,14 @@
             this.peperoni_pizza_beskrivelse.TabIndex = 8;
             this.peperoni_pizza_beskrivelse.Text = "Tomatsovs, Peperoni og Mozarella";
             // 
-            // label1
+            // label_salat_pizza_beskrivelse
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(117, 324);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Tomatsovs, Kebab, Salat, og Dressing";
-            // 
-            // stoerelse_60_skinke
-            // 
-            stoerelse_60_skinke.AutoSize = true;
-            stoerelse_60_skinke.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            stoerelse_60_skinke.Location = new System.Drawing.Point(346, 34);
-            stoerelse_60_skinke.Name = "stoerelse_60_skinke";
-            stoerelse_60_skinke.Size = new System.Drawing.Size(41, 13);
-            stoerelse_60_skinke.TabIndex = 10;
-            stoerelse_60_skinke.Text = "60 cm";
+            this.label_salat_pizza_beskrivelse.AutoSize = true;
+            this.label_salat_pizza_beskrivelse.Location = new System.Drawing.Point(117, 324);
+            this.label_salat_pizza_beskrivelse.Name = "label_salat_pizza_beskrivelse";
+            this.label_salat_pizza_beskrivelse.Size = new System.Drawing.Size(188, 13);
+            this.label_salat_pizza_beskrivelse.TabIndex = 9;
+            this.label_salat_pizza_beskrivelse.Text = "Tomatsovs, Kebab, Salat, og Dressing";
             // 
             // stoerelse_60_peperoni
             // 
@@ -283,6 +295,7 @@
             this.Add_button_70_skinke_pizza.Text = "+";
             this.Add_button_70_skinke_pizza.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Add_button_70_skinke_pizza.UseVisualStyleBackColor = true;
+            this.Add_button_70_skinke_pizza.Click += new System.EventHandler(this.Add_button_70_skinke_pizza_Click);
             // 
             // Add_button_140_skinke_pizza
             // 
@@ -296,6 +309,7 @@
             this.Add_button_140_skinke_pizza.Text = "+";
             this.Add_button_140_skinke_pizza.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Add_button_140_skinke_pizza.UseVisualStyleBackColor = true;
+            this.Add_button_140_skinke_pizza.Click += new System.EventHandler(this.Add_button_140_skinke_pizza_Click);
             // 
             // Add_button_70_peperoni_pizza
             // 
@@ -309,6 +323,7 @@
             this.Add_button_70_peperoni_pizza.Text = "+";
             this.Add_button_70_peperoni_pizza.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Add_button_70_peperoni_pizza.UseVisualStyleBackColor = true;
+            this.Add_button_70_peperoni_pizza.Click += new System.EventHandler(this.Add_button_70_peperoni_pizza_Click);
             // 
             // Add_button_140_peperoni_pizza
             // 
@@ -322,6 +337,7 @@
             this.Add_button_140_peperoni_pizza.Text = "+";
             this.Add_button_140_peperoni_pizza.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Add_button_140_peperoni_pizza.UseVisualStyleBackColor = true;
+            this.Add_button_140_peperoni_pizza.Click += new System.EventHandler(this.Add_button_140_peperoni_pizza_Click);
             // 
             // Add_button_75_salat_pizza
             // 
@@ -335,6 +351,7 @@
             this.Add_button_75_salat_pizza.Text = "+";
             this.Add_button_75_salat_pizza.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Add_button_75_salat_pizza.UseVisualStyleBackColor = true;
+            this.Add_button_75_salat_pizza.Click += new System.EventHandler(this.Add_button_75_salat_pizza_Click);
             // 
             // Add_button_145_salat_pizza
             // 
@@ -348,6 +365,7 @@
             this.Add_button_145_salat_pizza.Text = "+";
             this.Add_button_145_salat_pizza.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Add_button_145_salat_pizza.UseVisualStyleBackColor = true;
+            this.Add_button_145_salat_pizza.Click += new System.EventHandler(this.Add_button_145_salat_pizza_Click);
             // 
             // bestillings_tabel
             // 
@@ -360,6 +378,7 @@
             this.bestillings_tabel.Controls.Add(this.vare_label, 1, 0);
             this.bestillings_tabel.Controls.Add(this.bestil_button, 1, 3);
             this.bestillings_tabel.Controls.Add(this.antal_label, 0, 0);
+            this.bestillings_tabel.Controls.Add(this.antal_listbox, 0, 1);
             this.bestillings_tabel.Location = new System.Drawing.Point(460, 40);
             this.bestillings_tabel.Name = "bestillings_tabel";
             this.bestillings_tabel.RowCount = 4;
@@ -369,7 +388,42 @@
             this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.22222F));
             this.bestillings_tabel.Size = new System.Drawing.Size(228, 221);
             this.bestillings_tabel.TabIndex = 28;
-            this.bestillings_tabel.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // total_label
+            // 
+            this.total_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.total_label.AutoSize = true;
+            this.total_label.Location = new System.Drawing.Point(3, 140);
+            this.total_label.Name = "total_label";
+            this.total_label.Size = new System.Drawing.Size(62, 13);
+            this.total_label.TabIndex = 32;
+            this.total_label.Text = "Total";
+            this.total_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.total_label.UseMnemonic = false;
+            // 
+            // pris_label
+            // 
+            this.pris_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pris_label.AutoSize = true;
+            this.pris_label.Location = new System.Drawing.Point(162, 5);
+            this.pris_label.Name = "pris_label";
+            this.pris_label.Size = new System.Drawing.Size(63, 13);
+            this.pris_label.TabIndex = 32;
+            this.pris_label.Text = "Pris";
+            this.pris_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pris_label.UseMnemonic = false;
+            // 
+            // vare_label
+            // 
+            this.vare_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.vare_label.AutoSize = true;
+            this.vare_label.Location = new System.Drawing.Point(71, 5);
+            this.vare_label.Name = "vare_label";
+            this.vare_label.Size = new System.Drawing.Size(85, 13);
+            this.vare_label.TabIndex = 31;
+            this.vare_label.Text = "Vare";
+            this.vare_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.vare_label.UseMnemonic = false;
             // 
             // bestil_button
             // 
@@ -400,48 +454,131 @@
             this.antal_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.antal_label.UseMnemonic = false;
             // 
-            // vare_label
+            // vScrollBar1
             // 
-            this.vare_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.vare_label.AutoSize = true;
-            this.vare_label.Location = new System.Drawing.Point(71, 5);
-            this.vare_label.Name = "vare_label";
-            this.vare_label.Size = new System.Drawing.Size(85, 13);
-            this.vare_label.TabIndex = 31;
-            this.vare_label.Text = "Vare";
-            this.vare_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.vare_label.UseMnemonic = false;
+            this.vScrollBar1.Location = new System.Drawing.Point(704, 9);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 550);
+            this.vScrollBar1.TabIndex = 29;
             // 
-            // pris_label
+            // fatasi_pizza_beskrivelse
             // 
-            this.pris_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.pris_label.AutoSize = true;
-            this.pris_label.Location = new System.Drawing.Point(162, 5);
-            this.pris_label.Name = "pris_label";
-            this.pris_label.Size = new System.Drawing.Size(63, 13);
-            this.pris_label.TabIndex = 32;
-            this.pris_label.Text = "Pris";
-            this.pris_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.pris_label.UseMnemonic = false;
+            this.fatasi_pizza_beskrivelse.AutoSize = true;
+            this.fatasi_pizza_beskrivelse.Location = new System.Drawing.Point(117, 444);
+            this.fatasi_pizza_beskrivelse.Name = "fatasi_pizza_beskrivelse";
+            this.fatasi_pizza_beskrivelse.Size = new System.Drawing.Size(172, 13);
+            this.fatasi_pizza_beskrivelse.TabIndex = 32;
+            this.fatasi_pizza_beskrivelse.Text = "Lav din egen pizza (max 4 stk. fyld)";
             // 
-            // total_label
+            // vaelg_selv_pizza_label
             // 
-            this.total_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.total_label.AutoSize = true;
-            this.total_label.Location = new System.Drawing.Point(3, 140);
-            this.total_label.Name = "total_label";
-            this.total_label.Size = new System.Drawing.Size(62, 13);
-            this.total_label.TabIndex = 32;
-            this.total_label.Text = "Total";
-            this.total_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.total_label.UseMnemonic = false;
-            this.total_label.Click += new System.EventHandler(this.label5_Click);
+            this.vaelg_selv_pizza_label.AutoSize = true;
+            this.vaelg_selv_pizza_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vaelg_selv_pizza_label.Location = new System.Drawing.Point(12, 393);
+            this.vaelg_selv_pizza_label.Name = "vaelg_selv_pizza_label";
+            this.vaelg_selv_pizza_label.Size = new System.Drawing.Size(93, 15);
+            this.vaelg_selv_pizza_label.TabIndex = 31;
+            this.vaelg_selv_pizza_label.Text = "4. Fantasi Pizza";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 409);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(99, 88);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Add_button_155_fantasi_pizza
+            // 
+            this.Add_button_155_fantasi_pizza.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Add_button_155_fantasi_pizza.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Add_button_155_fantasi_pizza.Font = new System.Drawing.Font("Keep Calm Med", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add_button_155_fantasi_pizza.Location = new System.Drawing.Point(391, 437);
+            this.Add_button_155_fantasi_pizza.Name = "Add_button_155_fantasi_pizza";
+            this.Add_button_155_fantasi_pizza.Size = new System.Drawing.Size(25, 25);
+            this.Add_button_155_fantasi_pizza.TabIndex = 38;
+            this.Add_button_155_fantasi_pizza.Text = "+";
+            this.Add_button_155_fantasi_pizza.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Add_button_155_fantasi_pizza.UseVisualStyleBackColor = true;
+            this.Add_button_155_fantasi_pizza.Click += new System.EventHandler(this.Add_button_155_fantasi_pizza_Click);
+            // 
+            // Add_button_80_fantasi_pizza
+            // 
+            this.Add_button_80_fantasi_pizza.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Add_button_80_fantasi_pizza.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Add_button_80_fantasi_pizza.Font = new System.Drawing.Font("Keep Calm Med", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add_button_80_fantasi_pizza.Location = new System.Drawing.Point(349, 437);
+            this.Add_button_80_fantasi_pizza.Name = "Add_button_80_fantasi_pizza";
+            this.Add_button_80_fantasi_pizza.Size = new System.Drawing.Size(25, 25);
+            this.Add_button_80_fantasi_pizza.TabIndex = 37;
+            this.Add_button_80_fantasi_pizza.Text = "+";
+            this.Add_button_80_fantasi_pizza.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Add_button_80_fantasi_pizza.UseVisualStyleBackColor = true;
+            this.Add_button_80_fantasi_pizza.Click += new System.EventHandler(this.Add_button_80_fantasi_pizza_Click);
+            // 
+            // pris_155_fantasi
+            // 
+            this.pris_155_fantasi.AutoSize = true;
+            this.pris_155_fantasi.Location = new System.Drawing.Point(388, 419);
+            this.pris_155_fantasi.Name = "pris_155_fantasi";
+            this.pris_155_fantasi.Size = new System.Drawing.Size(37, 13);
+            this.pris_155_fantasi.TabIndex = 36;
+            this.pris_155_fantasi.Text = "155 kr";
+            // 
+            // pris_80_fantasi
+            // 
+            this.pris_80_fantasi.AutoSize = true;
+            this.pris_80_fantasi.Location = new System.Drawing.Point(346, 419);
+            this.pris_80_fantasi.Name = "pris_80_fantasi";
+            this.pris_80_fantasi.Size = new System.Drawing.Size(31, 13);
+            this.pris_80_fantasi.TabIndex = 35;
+            this.pris_80_fantasi.Text = "80 kr";
+            // 
+            // stoerelse_90_fantasi
+            // 
+            this.stoerelse_90_fantasi.AutoSize = true;
+            this.stoerelse_90_fantasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stoerelse_90_fantasi.Location = new System.Drawing.Point(388, 395);
+            this.stoerelse_90_fantasi.Name = "stoerelse_90_fantasi";
+            this.stoerelse_90_fantasi.Size = new System.Drawing.Size(41, 13);
+            this.stoerelse_90_fantasi.TabIndex = 34;
+            this.stoerelse_90_fantasi.Text = "90 cm";
+            // 
+            // stoerelse_60_fantasi
+            // 
+            this.stoerelse_60_fantasi.AutoSize = true;
+            this.stoerelse_60_fantasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stoerelse_60_fantasi.Location = new System.Drawing.Point(346, 395);
+            this.stoerelse_60_fantasi.Name = "stoerelse_60_fantasi";
+            this.stoerelse_60_fantasi.Size = new System.Drawing.Size(41, 13);
+            this.stoerelse_60_fantasi.TabIndex = 33;
+            this.stoerelse_60_fantasi.Text = "60 cm";
+            // 
+            // antal_listbox
+            // 
+            this.antal_listbox.FormattingEnabled = true;
+            this.antal_listbox.Location = new System.Drawing.Point(3, 27);
+            this.antal_listbox.Name = "antal_listbox";
+            this.antal_listbox.Size = new System.Drawing.Size(62, 82);
+            this.antal_listbox.TabIndex = 33;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 502);
+            this.ClientSize = new System.Drawing.Size(720, 555);
+            this.Controls.Add(this.Add_button_155_fantasi_pizza);
+            this.Controls.Add(this.Add_button_80_fantasi_pizza);
+            this.Controls.Add(this.pris_155_fantasi);
+            this.Controls.Add(this.pris_80_fantasi);
+            this.Controls.Add(this.stoerelse_90_fantasi);
+            this.Controls.Add(this.stoerelse_60_fantasi);
+            this.Controls.Add(this.fatasi_pizza_beskrivelse);
+            this.Controls.Add(this.vaelg_selv_pizza_label);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.bestillings_tabel);
             this.Controls.Add(this.Add_button_145_salat_pizza);
             this.Controls.Add(this.Add_button_75_salat_pizza);
@@ -461,7 +598,7 @@
             this.Controls.Add(this.stoerelse_60_salat);
             this.Controls.Add(this.stoerelse_60_peperoni);
             this.Controls.Add(stoerelse_60_skinke);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label_salat_pizza_beskrivelse);
             this.Controls.Add(this.peperoni_pizza_beskrivelse);
             this.Controls.Add(this.skinke_pizza_beskrivelse);
             this.Controls.Add(this.label_pizza_salat);
@@ -478,6 +615,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.salat_pizza_billede)).EndInit();
             this.bestillings_tabel.ResumeLayout(false);
             this.bestillings_tabel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -493,7 +631,7 @@
         private System.Windows.Forms.Label label_pizza_salat;
         private System.Windows.Forms.Label skinke_pizza_beskrivelse;
         private System.Windows.Forms.Label peperoni_pizza_beskrivelse;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_salat_pizza_beskrivelse;
         private System.Windows.Forms.Label stoerelse_60_peperoni;
         private System.Windows.Forms.Label stoerelse_60_salat;
         private System.Windows.Forms.Label stoerelse_90_skinke;
@@ -517,5 +655,16 @@
         private System.Windows.Forms.Label pris_label;
         private System.Windows.Forms.Label vare_label;
         private System.Windows.Forms.Label antal_label;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
+        private System.Windows.Forms.ListBox antal_listbox;
+        private System.Windows.Forms.Label fatasi_pizza_beskrivelse;
+        private System.Windows.Forms.Label vaelg_selv_pizza_label;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Add_button_155_fantasi_pizza;
+        private System.Windows.Forms.Button Add_button_80_fantasi_pizza;
+        private System.Windows.Forms.Label pris_155_fantasi;
+        private System.Windows.Forms.Label pris_80_fantasi;
+        private System.Windows.Forms.Label stoerelse_90_fantasi;
+        private System.Windows.Forms.Label stoerelse_60_fantasi;
     }
 }

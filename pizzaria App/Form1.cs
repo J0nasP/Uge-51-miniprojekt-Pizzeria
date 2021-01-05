@@ -22,14 +22,52 @@ namespace pizzaria_App
 
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        #region skinke_buttons
+
+        private void Add_button_70_skinke_pizza_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Add_button_140_skinke_pizza_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
+
+        #region peperoni_buttons
+        private void Add_button_70_peperoni_pizza_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void Add_button_140_peperoni_pizza_Click(object sender, EventArgs e)
         {
 
         }
+        #endregion
+
+        #region salat_buttons
+        private void Add_button_75_salat_pizza_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Add_button_145_salat_pizza_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
+
+        #region fantasi_buttons
+        private void Add_button_80_fantasi_pizza_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Add_button_155_fantasi_pizza_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
     }
 }
