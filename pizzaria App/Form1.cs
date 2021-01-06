@@ -26,7 +26,7 @@ namespace pizzaria_App
 
         private void Add_button_70_skinke_pizza_Click(object sender, EventArgs e)
         {
-
+            
         }
         private void Add_button_140_skinke_pizza_Click(object sender, EventArgs e)
         {
@@ -69,5 +69,15 @@ namespace pizzaria_App
 
         }
         #endregion
+
+        private void bestillings_tabel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void antal_60_skinke_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
