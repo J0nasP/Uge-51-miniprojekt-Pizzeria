@@ -134,5 +134,15 @@ namespace pizzaria_App
         {
 
         }
+
+        private void pris_70_skinke_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void stoerelse_60_skinke_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

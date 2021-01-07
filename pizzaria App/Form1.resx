@@ -40549,4 +40549,13 @@
         lFJKKaU8G1tjKaWUUkoppZTyXHz3H/v/AfAyG7ze5c3CAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="stoerelse_60_peperoni.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="stoerelse_60_salat.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="stoerelse_60_fantasi.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
 </root>
