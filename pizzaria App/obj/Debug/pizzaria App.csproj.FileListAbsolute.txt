@@ -12,9 +12,10 @@ C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\bin\Deb
 C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\bin\Debug\pizzaria App.exe
 C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\bin\Debug\pizzaria App.pdb
 C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\obj\Debug\pizzaria App.csprojAssemblyReference.cache
-C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\obj\Debug\pizzaria_App.Form1.resources
 C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\obj\Debug\pizzaria_App.Properties.Resources.resources
 C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\obj\Debug\pizzaria App.csproj.GenerateResource.cache
 C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\obj\Debug\pizzaria App.csproj.CoreCompileInputs.cache
 C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\obj\Debug\pizzaria App.exe
 C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\obj\Debug\pizzaria App.pdb
+C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\obj\Debug\pizzaria_App.Bestillings_vindue.resources
+C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\obj\Debug\pizzaria_App.Tilbehør.resources

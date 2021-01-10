@@ -1,6 +1,6 @@
 ﻿namespace pizzaria_App
 {
-    partial class Form1
+    partial class Bestillings_vindue
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bestillings_vindue));
             this.skinke_pizza_billede = new System.Windows.Forms.PictureBox();
             this.peperoni_pizza_billede = new System.Windows.Forms.PictureBox();
             this.label_pizza_skinke = new System.Windows.Forms.Label();
@@ -199,7 +199,6 @@
             this.bestillings_tabel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.bestillings_tabel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.bestillings_tabel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.bestillings_tabel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.bestillings_tabel.Controls.Add(this.pizza_total_pris, 2, 9);
             this.bestillings_tabel.Controls.Add(this.fantasi_90_pris_total, 2, 8);
             this.bestillings_tabel.Controls.Add(this.fantasi_60_pris_total, 2, 7);
@@ -238,7 +237,7 @@
             this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
@@ -602,6 +601,7 @@
             this.tilbehoer_skinke_60.TabIndex = 67;
             this.tilbehoer_skinke_60.Text = "Tilbehør";
             this.tilbehoer_skinke_60.UseVisualStyleBackColor = true;
+            this.tilbehoer_skinke_60.Click += new System.EventHandler(this.tilbehoer_skinke_60_Click);
             // 
             // tilbehoer_skinke_90
             // 
@@ -611,6 +611,7 @@
             this.tilbehoer_skinke_90.TabIndex = 68;
             this.tilbehoer_skinke_90.Text = "Tilbehør";
             this.tilbehoer_skinke_90.UseVisualStyleBackColor = true;
+            this.tilbehoer_skinke_90.Click += new System.EventHandler(this.tilbehoer_skinke_90_Click);
             // 
             // tilbehoer_peperoni_60
             // 
@@ -620,6 +621,7 @@
             this.tilbehoer_peperoni_60.TabIndex = 69;
             this.tilbehoer_peperoni_60.Text = "Tilbehør";
             this.tilbehoer_peperoni_60.UseVisualStyleBackColor = true;
+            this.tilbehoer_peperoni_60.Click += new System.EventHandler(this.tilbehoer_peperoni_60_Click);
             // 
             // tilbehoer_peperoni_90
             // 
@@ -629,6 +631,7 @@
             this.tilbehoer_peperoni_90.TabIndex = 70;
             this.tilbehoer_peperoni_90.Text = "Tilbehør";
             this.tilbehoer_peperoni_90.UseVisualStyleBackColor = true;
+            this.tilbehoer_peperoni_90.Click += new System.EventHandler(this.tilbehoer_peperoni_90_Click);
             // 
             // tilbehoer_salat_60
             // 
@@ -638,6 +641,7 @@
             this.tilbehoer_salat_60.TabIndex = 71;
             this.tilbehoer_salat_60.Text = "Tilbehør";
             this.tilbehoer_salat_60.UseVisualStyleBackColor = true;
+            this.tilbehoer_salat_60.Click += new System.EventHandler(this.tilbehoer_salat_60_Click);
             // 
             // tilbehoer_salat_90
             // 
@@ -647,6 +651,7 @@
             this.tilbehoer_salat_90.TabIndex = 72;
             this.tilbehoer_salat_90.Text = "Tilbehør";
             this.tilbehoer_salat_90.UseVisualStyleBackColor = true;
+            this.tilbehoer_salat_90.Click += new System.EventHandler(this.tilbehoer_salat_90_Click);
             // 
             // tilbehoer_fantasi_60
             // 
@@ -656,6 +661,7 @@
             this.tilbehoer_fantasi_60.TabIndex = 73;
             this.tilbehoer_fantasi_60.Text = "Tilbehør";
             this.tilbehoer_fantasi_60.UseVisualStyleBackColor = true;
+            this.tilbehoer_fantasi_60.Click += new System.EventHandler(this.tilbehoer_fantasi_60_Click);
             // 
             // tilbehoer_fantasi_90
             // 
@@ -665,6 +671,7 @@
             this.tilbehoer_fantasi_90.TabIndex = 74;
             this.tilbehoer_fantasi_90.Text = "Tilbehør";
             this.tilbehoer_fantasi_90.UseVisualStyleBackColor = true;
+            this.tilbehoer_fantasi_90.Click += new System.EventHandler(this.tilbehoer_fantasi_90_Click);
             // 
             // antal_60_salat
             // 
@@ -675,7 +682,7 @@
             this.antal_60_salat.Size = new System.Drawing.Size(100, 22);
             this.antal_60_salat.TabIndex = 59;
             // 
-            // Form1
+            // Bestillings_vindue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -702,7 +709,7 @@
             this.Controls.Add(this.peperoni_pizza_billede);
             this.Controls.Add(this.skinke_pizza_billede);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Name = "Bestillings_vindue";
             this.Text = "Bestilling";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.skinke_pizza_billede)).EndInit();

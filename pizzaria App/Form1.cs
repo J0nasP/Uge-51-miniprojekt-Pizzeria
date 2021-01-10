@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pizzaria_App
 {
-    public partial class Form1 : Form
+    public partial class Bestillings_vindue : Form
     {
-        public Form1()
+        public Bestillings_vindue()
         {
             InitializeComponent();
 
@@ -27,6 +27,12 @@ namespace pizzaria_App
 
         #region button methods
 
+        //Method that opens a new form containing the possible extra topping possibilities
+        private void open_tilbehoer()
+        {
+            Tilbehør form2 = new Tilbehør();
+            form2.ShowDialog();
+        }
 
 
         #endregion
@@ -36,15 +42,7 @@ namespace pizzaria_App
 
         }
 
-        private void pris_70_skinke_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void stoerelse_60_skinke_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void label11_Click(object sender, EventArgs e)
         {
@@ -56,14 +54,49 @@ namespace pizzaria_App
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void numericUpDown_ValueChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void numericUpDown_ValueChanged(object sender, EventArgs e)
+        private void tilbehoer_skinke_60_Click(object sender, EventArgs e)
         {
+            open_tilbehoer();
+        }
 
+        private void tilbehoer_skinke_90_Click(object sender, EventArgs e)
+        {
+            open_tilbehoer();
+        }
+
+        private void tilbehoer_peperoni_60_Click(object sender, EventArgs e)
+        {
+            open_tilbehoer();
+        }
+
+        private void tilbehoer_peperoni_90_Click(object sender, EventArgs e)
+        {
+            open_tilbehoer();
+        }
+
+        private void tilbehoer_salat_60_Click(object sender, EventArgs e)
+        {
+            open_tilbehoer();
+        }
+
+        private void tilbehoer_salat_90_Click(object sender, EventArgs e)
+        {
+            open_tilbehoer();
+        }
+
+        private void tilbehoer_fantasi_60_Click(object sender, EventArgs e)
+        {
+            open_tilbehoer();
+        }
+
+        private void tilbehoer_fantasi_90_Click(object sender, EventArgs e)
+        {
+            open_tilbehoer();
         }
     }
 }
