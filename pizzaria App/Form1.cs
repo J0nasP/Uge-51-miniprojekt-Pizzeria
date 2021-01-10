@@ -15,6 +15,8 @@ namespace pizzaria_App
         public Form1()
         {
             InitializeComponent();
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -22,115 +24,14 @@ namespace pizzaria_App
 
         }
 
-        #region skinke_buttons
-
-        private void Add_button_70_skinke_pizza_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Add_button_140_skinke_pizza_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void subtract_button_70_skinke_pizza_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void subtract_button_140_skinke_pizza_Click(object sender, EventArgs e)
-        {
-
-        }
-        #endregion
-
-        #region peperoni_buttons
-        private void Add_button_70_peperoni_pizza_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Add_button_140_peperoni_pizza_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void subtract_button_70_peperoni_pizza_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void subtract_button_140_peperoni_pizza_Click(object sender, EventArgs e)
-        {
-
-        }
-        #endregion
-
-        #region salat_buttons
-        private void Add_button_75_salat_pizza_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Add_button_145_salat_pizza_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void subtract_button_145_salat_pizza_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void subtract_button_75_salat_pizza_Click(object sender, EventArgs e)
-        {
-
-        }
-        #endregion
-
-        #region fantasi_buttons
-        private void Add_button_80_fantasi_pizza_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Add_button_155_fantasi_pizza_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void subtract_button_80_fantasi_pizza_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void subtract_button_155_fantasi_pizza_Click(object sender, EventArgs e)
-        {
-
-        }
-        #endregion
 
         #region button methods
 
-        private void one_up_text_value()
-        {
-            
-        }
 
-        private void one_down_text_value(string value)
-        {
- 
-            var new_value = this.Text;
-        }
 
         #endregion
 
         private void bestillings_tabel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
 
         }
@@ -141,6 +42,26 @@ namespace pizzaria_App
         }
 
         private void stoerelse_60_skinke_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown_ValueChanged(object sender, EventArgs e)
         {
 
         }
