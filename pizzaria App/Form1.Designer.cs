@@ -439,7 +439,7 @@
             this.antal_60_skinke.Name = "antal_60_skinke";
             this.antal_60_skinke.Size = new System.Drawing.Size(100, 22);
             this.antal_60_skinke.TabIndex = 47;
-            this.antal_60_skinke.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            this.antal_60_skinke.ValueChanged += new System.EventHandler(this.udregning_60_cm);
             // 
             // fatasi_pizza_beskrivelse
             // 
