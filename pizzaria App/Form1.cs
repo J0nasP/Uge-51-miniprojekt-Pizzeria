@@ -45,13 +45,6 @@ namespace pizzaria_App
 
 
 
-        private void bestillings_tabel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-
         private void label11_Click(object sender, EventArgs e)
         {
 
@@ -63,6 +56,33 @@ namespace pizzaria_App
         }
 
         #region udregning af pris
+
+        private int udregning_skinke(Label skinke_60, Label skinke_90)
+        {
+            int total_pris_skinke = Convert.ToInt32(skinke_60) + Convert.ToInt32(skinke_90);
+            return total_pris_skinke;
+        }
+
+        private int udregning_peperoni(Label peperoni_60, Label peperoni_90)
+        {
+           int total_pris_peperoni = Convert.ToInt32(peperoni_60) + Convert.ToInt32(peperoni_90);
+           return total_pris_peperoni;
+        }
+
+        private int udregning_salat(Label salat_60, Label salat_90)
+        {
+            int total_pris_salat = Convert.ToInt32(salat_60) + Convert.ToInt32(salat_90);
+            return total_pris_salat;
+        }
+
+        private int udregning_fantasi(Label fantasi_60, Label fantasi_90)
+        {
+            int total_pris_fantasi = Convert.ToInt32(fantasi_60) + Convert.ToInt32(fantasi_90);
+            return total_pris_fantasi;
+        }
+
+
+
         private void udregning_60_cm(NumericUpDown antal, Label pris_total)
         {
             decimal value = antal.Value * 70;
@@ -92,7 +112,6 @@ namespace pizzaria_App
             decimal value = antal.Value * 30;
             pris_total.Text = value.ToString() + "kr";
         }
-
 
         #endregion
 
@@ -141,6 +160,7 @@ namespace pizzaria_App
         {
             open_godkendt();
         }
+
         #endregion
 
 
