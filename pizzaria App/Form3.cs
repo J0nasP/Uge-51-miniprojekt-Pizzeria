@@ -10,21 +10,17 @@ using System.Windows.Forms;
 
 namespace pizzaria_App
 {
-    public partial class Tilbehør : Form
+    public partial class godkendt_bestilling : Form
     {
-        public Tilbehør()
+        public godkendt_bestilling()
         {
             InitializeComponent();
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void afbryd_button_Click(object sender, EventArgs e)
+        private void luk_vinduet_Click(object sender, EventArgs e)
         {
             this.Close();
+
         }
     }
 }

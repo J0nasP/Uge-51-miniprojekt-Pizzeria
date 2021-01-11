@@ -34,6 +34,12 @@ namespace pizzaria_App
             form2.ShowDialog();
         }
 
+        private void open_godkendt()
+        {
+            godkendt_bestilling form3 = new godkendt_bestilling();
+            form3.ShowDialog();
+        }
+
 
         #endregion
 
@@ -97,6 +103,11 @@ namespace pizzaria_App
         private void tilbehoer_fantasi_90_Click(object sender, EventArgs e)
         {
             open_tilbehoer();
+        }
+
+        private void bestil_button_Click(object sender, EventArgs e)
+        {
+            open_godkendt();
         }
     }
 }

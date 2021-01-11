@@ -1086,6 +1086,7 @@
             this.bestil_button.TabIndex = 77;
             this.bestil_button.Text = "Bestil";
             this.bestil_button.UseVisualStyleBackColor = false;
+            this.bestil_button.Click += new System.EventHandler(this.bestil_button_Click);
             // 
             // Bestillings_vindue
             // 

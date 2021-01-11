@@ -19,3 +19,4 @@ C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\obj\Deb
 C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\obj\Debug\pizzaria App.pdb
 C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\obj\Debug\pizzaria_App.Bestillings_vindue.resources
 C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\obj\Debug\pizzaria_App.Tilbehør.resources
+C:\Users\peter\Documents\GitHub\Uge-51-miniprojekt-Pizzeria\pizzaria App\obj\Debug\pizzaria_App.godkendt_bestilling.resources
