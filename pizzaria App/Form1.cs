@@ -63,6 +63,10 @@ namespace pizzaria_App
             return total_pris_skinke;
         }
 
+        private void udregning()
+        {
+            
+        }
         private int udregning_peperoni(Label peperoni_60, Label peperoni_90)
         {
            int total_pris_peperoni = Convert.ToInt32(peperoni_60) + Convert.ToInt32(peperoni_90);
