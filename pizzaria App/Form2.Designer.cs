@@ -49,7 +49,6 @@
             this.tilbehoer_box.Name = "tilbehoer_box";
             this.tilbehoer_box.Size = new System.Drawing.Size(286, 157);
             this.tilbehoer_box.TabIndex = 0;
-            this.tilbehoer_box.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // afbryd_button
             // 
@@ -73,6 +72,7 @@
             this.tilfoej_button.TabIndex = 2;
             this.tilfoej_button.Text = "Tilføj";
             this.tilfoej_button.UseVisualStyleBackColor = false;
+            this.tilfoej_button.Click += new System.EventHandler(this.tilfoej_button_click);
             // 
             // Tilbehør
             // 

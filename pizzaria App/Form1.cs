@@ -255,7 +255,7 @@ namespace pizzaria_App
 
         #endregion
 
-        #region udregning af pris buttons
+        #region udregning af pris pizza buttons
         private void udregning_salat_60_button(object sender, EventArgs e)
         {
             udregning_salat_60_label();
@@ -296,6 +296,9 @@ namespace pizzaria_App
             udregning_fantasi_90_label();
         }
 
+        #endregion
+
+        #region udregning af pris sodavand buttons
         private void udregning_lille_cola_button(object sender, EventArgs e)
         {
             udregning_cola_lille_label();
@@ -313,7 +316,7 @@ namespace pizzaria_App
 
         private void udregning_lille_sprite_button(object sender, EventArgs e)
         {
-            udregning_fanta_lille_label();
+            udregning_sprite_lille();
         }
 
         private void udregning_mellem_sprite_button(object sender, EventArgs e)
