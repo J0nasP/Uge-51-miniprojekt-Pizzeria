@@ -35,6 +35,7 @@ namespace pizzaria_App
 
         private void check_listbox()
         {
+
             if (tilbehoer_box.CheckedItems.Count != 0 )
             {
                 int i;
@@ -49,6 +50,12 @@ namespace pizzaria_App
                 }
                 MessageBox.Show(s);
             }
+            else
+            {
+                string fejl = " Fejl! \n Du har ikke valgt noget tilbehør";
+                MessageBox.Show(fejl);
+            }
+
         }
 
         private int antal_tilbehoer_check()
