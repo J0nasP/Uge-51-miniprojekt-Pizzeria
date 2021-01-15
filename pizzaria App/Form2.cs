@@ -49,6 +49,7 @@ namespace pizzaria_App
                     }
                 }
                 MessageBox.Show(s);
+                antal_tilbehoer_check();
             }
             else
             {
