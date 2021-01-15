@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.tilbehoer_box = new System.Windows.Forms.CheckedListBox();
             this.afbryd_button = new System.Windows.Forms.Button();
             this.tilfoej_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // checkedListBox1
+            // tilbehoer_box
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.tilbehoer_box.FormattingEnabled = true;
+            this.tilbehoer_box.Items.AddRange(new object[] {
             "Fuldkornsdej",
             "Bacon",
             "Skinke",
@@ -45,11 +45,11 @@
             "Kebab",
             "Peperoni",
             "Dressing"});
-            this.checkedListBox1.Location = new System.Drawing.Point(120, 37);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(286, 157);
-            this.checkedListBox1.TabIndex = 0;
-            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
+            this.tilbehoer_box.Location = new System.Drawing.Point(120, 37);
+            this.tilbehoer_box.Name = "tilbehoer_box";
+            this.tilbehoer_box.Size = new System.Drawing.Size(286, 157);
+            this.tilbehoer_box.TabIndex = 0;
+            this.tilbehoer_box.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // afbryd_button
             // 
@@ -82,8 +82,8 @@
             this.ClientSize = new System.Drawing.Size(518, 268);
             this.Controls.Add(this.tilfoej_button);
             this.Controls.Add(this.afbryd_button);
-            this.Controls.Add(this.checkedListBox1);
-            this.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.Controls.Add(this.tilbehoer_box);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "Tilbehør";
             this.Text = "Tilbehør";
             this.ResumeLayout(false);
@@ -92,7 +92,7 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox tilbehoer_box;
         private System.Windows.Forms.Button afbryd_button;
         private System.Windows.Forms.Button tilfoej_button;
     }

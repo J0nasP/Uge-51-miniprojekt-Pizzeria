@@ -89,7 +89,7 @@
             this.antal_fanta_33 = new System.Windows.Forms.NumericUpDown();
             this.antal_cola_150 = new System.Windows.Forms.NumericUpDown();
             this.antal_cola_50 = new System.Windows.Forms.NumericUpDown();
-            this.pris_150_pris = new System.Windows.Forms.Label();
+            this.sprite_150_pris = new System.Windows.Forms.Label();
             this.sprite_50_pris = new System.Windows.Forms.Label();
             this.sprite_33_pris = new System.Windows.Forms.Label();
             this.fanta_150_pris = new System.Windows.Forms.Label();
@@ -339,6 +339,7 @@
             this.antal_90_fantasi.Name = "antal_90_fantasi";
             this.antal_90_fantasi.Size = new System.Drawing.Size(100, 22);
             this.antal_90_fantasi.TabIndex = 66;
+            this.antal_90_fantasi.ValueChanged += new System.EventHandler(this.udregning_fantasi_90_button);
             // 
             // salat_60_pris_total
             // 
@@ -358,6 +359,7 @@
             this.antal_60_fantasi.Name = "antal_60_fantasi";
             this.antal_60_fantasi.Size = new System.Drawing.Size(100, 22);
             this.antal_60_fantasi.TabIndex = 65;
+            this.antal_60_fantasi.ValueChanged += new System.EventHandler(this.udregning_fantasi_60_button);
             // 
             // peperoni_90_pris_total
             // 
@@ -485,6 +487,7 @@
             this.antal_90_peperoni.Name = "antal_90_peperoni";
             this.antal_90_peperoni.Size = new System.Drawing.Size(100, 22);
             this.antal_90_peperoni.TabIndex = 54;
+            this.antal_90_peperoni.ValueChanged += new System.EventHandler(this.udregning_peperoni_90_button);
             // 
             // pris_label
             // 
@@ -507,6 +510,7 @@
             this.antal_60_peperoni.Name = "antal_60_peperoni";
             this.antal_60_peperoni.Size = new System.Drawing.Size(100, 22);
             this.antal_60_peperoni.TabIndex = 53;
+            this.antal_60_peperoni.ValueChanged += new System.EventHandler(this.udregning_peperoni_60_button);
             // 
             // vare_label
             // 
@@ -566,6 +570,7 @@
             this.antal_90_skinke.Name = "antal_90_skinke";
             this.antal_90_skinke.Size = new System.Drawing.Size(100, 22);
             this.antal_90_skinke.TabIndex = 48;
+            this.antal_90_skinke.ValueChanged += new System.EventHandler(this.udregning_skinke_90_button);
             // 
             // antal_60_skinke
             // 
@@ -575,6 +580,7 @@
             this.antal_60_skinke.Name = "antal_60_skinke";
             this.antal_60_skinke.Size = new System.Drawing.Size(100, 22);
             this.antal_60_skinke.TabIndex = 47;
+            this.antal_60_skinke.ValueChanged += new System.EventHandler(this.udregning_skinke_60_button);
             // 
             // antal_90_salat
             // 
@@ -584,6 +590,7 @@
             this.antal_90_salat.Name = "antal_90_salat";
             this.antal_90_salat.Size = new System.Drawing.Size(100, 22);
             this.antal_90_salat.TabIndex = 60;
+            this.antal_90_salat.ValueChanged += new System.EventHandler(this.udregning_salat_90_button);
             // 
             // antal_60_salat
             // 
@@ -593,6 +600,7 @@
             this.antal_60_salat.Name = "antal_60_salat";
             this.antal_60_salat.Size = new System.Drawing.Size(100, 22);
             this.antal_60_salat.TabIndex = 59;
+            this.antal_60_salat.ValueChanged += new System.EventHandler(this.udregning_salat_60_button);
             // 
             // fatasi_pizza_beskrivelse
             // 
@@ -712,10 +720,10 @@
             this.overskrift_med_pris.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.overskrift_med_pris.Location = new System.Drawing.Point(162, 9);
             this.overskrift_med_pris.Name = "overskrift_med_pris";
-            this.overskrift_med_pris.Size = new System.Drawing.Size(545, 48);
+            this.overskrift_med_pris.Size = new System.Drawing.Size(545, 72);
             this.overskrift_med_pris.TabIndex = 75;
             this.overskrift_med_pris.Text = "Pizza på 60 cm koster 70 kr. Pizza på 90 cm koster 140 kr.\r\nEkstra fyld koster 5 " +
-    "kr ekstra.";
+    "kr ekstra.\r\nSodavand Lille: 15. Mellem: 25. Stor: 35";
             // 
             // tableLayoutPanel1
             // 
@@ -731,7 +739,7 @@
             this.tableLayoutPanel1.Controls.Add(this.antal_fanta_33, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.antal_cola_150, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.antal_cola_50, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pris_150_pris, 2, 9);
+            this.tableLayoutPanel1.Controls.Add(this.sprite_150_pris, 2, 9);
             this.tableLayoutPanel1.Controls.Add(this.sprite_50_pris, 2, 8);
             this.tableLayoutPanel1.Controls.Add(this.sprite_33_pris, 2, 7);
             this.tableLayoutPanel1.Controls.Add(this.fanta_150_pris, 2, 6);
@@ -779,6 +787,7 @@
             this.antal_sprite_150.Name = "antal_sprite_150";
             this.antal_sprite_150.Size = new System.Drawing.Size(105, 22);
             this.antal_sprite_150.TabIndex = 78;
+            this.antal_sprite_150.ValueChanged += new System.EventHandler(this.udregning_stor_sprite_button);
             // 
             // antal_sprite_50
             // 
@@ -787,6 +796,7 @@
             this.antal_sprite_50.Name = "antal_sprite_50";
             this.antal_sprite_50.Size = new System.Drawing.Size(105, 22);
             this.antal_sprite_50.TabIndex = 78;
+            this.antal_sprite_50.ValueChanged += new System.EventHandler(this.udregning_mellem_sprite_button);
             // 
             // antal_sprite_33
             // 
@@ -795,6 +805,7 @@
             this.antal_sprite_33.Name = "antal_sprite_33";
             this.antal_sprite_33.Size = new System.Drawing.Size(105, 22);
             this.antal_sprite_33.TabIndex = 78;
+            this.antal_sprite_33.ValueChanged += new System.EventHandler(this.udregning_lille_sprite_button);
             // 
             // antal_fanta_150
             // 
@@ -803,6 +814,7 @@
             this.antal_fanta_150.Name = "antal_fanta_150";
             this.antal_fanta_150.Size = new System.Drawing.Size(105, 22);
             this.antal_fanta_150.TabIndex = 78;
+            this.antal_fanta_150.ValueChanged += new System.EventHandler(this.udregning_stor_fanta_button);
             // 
             // antal_fanta_50
             // 
@@ -811,6 +823,7 @@
             this.antal_fanta_50.Name = "antal_fanta_50";
             this.antal_fanta_50.Size = new System.Drawing.Size(105, 22);
             this.antal_fanta_50.TabIndex = 78;
+            this.antal_fanta_50.ValueChanged += new System.EventHandler(this.udregning_mellem_fanta_button);
             // 
             // antal_fanta_33
             // 
@@ -819,6 +832,7 @@
             this.antal_fanta_33.Name = "antal_fanta_33";
             this.antal_fanta_33.Size = new System.Drawing.Size(105, 22);
             this.antal_fanta_33.TabIndex = 78;
+            this.antal_fanta_33.ValueChanged += new System.EventHandler(this.udregning_lille_fanta_button);
             // 
             // antal_cola_150
             // 
@@ -827,6 +841,7 @@
             this.antal_cola_150.Name = "antal_cola_150";
             this.antal_cola_150.Size = new System.Drawing.Size(105, 22);
             this.antal_cola_150.TabIndex = 78;
+            this.antal_cola_150.ValueChanged += new System.EventHandler(this.udregning_stor_cola_button);
             // 
             // antal_cola_50
             // 
@@ -835,16 +850,17 @@
             this.antal_cola_50.Name = "antal_cola_50";
             this.antal_cola_50.Size = new System.Drawing.Size(105, 22);
             this.antal_cola_50.TabIndex = 78;
+            this.antal_cola_50.ValueChanged += new System.EventHandler(this.udregning_mellem_cola_button);
             // 
-            // pris_150_pris
+            // sprite_150_pris
             // 
-            this.pris_150_pris.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pris_150_pris.AutoSize = true;
-            this.pris_150_pris.Location = new System.Drawing.Point(307, 304);
-            this.pris_150_pris.Name = "pris_150_pris";
-            this.pris_150_pris.Size = new System.Drawing.Size(16, 17);
-            this.pris_150_pris.TabIndex = 83;
-            this.pris_150_pris.Text = "0";
+            this.sprite_150_pris.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sprite_150_pris.AutoSize = true;
+            this.sprite_150_pris.Location = new System.Drawing.Point(307, 304);
+            this.sprite_150_pris.Name = "sprite_150_pris";
+            this.sprite_150_pris.Size = new System.Drawing.Size(16, 17);
+            this.sprite_150_pris.TabIndex = 83;
+            this.sprite_150_pris.Text = "0";
             // 
             // sprite_50_pris
             // 
@@ -1069,10 +1085,12 @@
             // antal_cola_33
             // 
             this.antal_cola_33.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.antal_cola_33.BackColor = System.Drawing.Color.White;
             this.antal_cola_33.Location = new System.Drawing.Point(3, 53);
             this.antal_cola_33.Name = "antal_cola_33";
             this.antal_cola_33.Size = new System.Drawing.Size(105, 22);
             this.antal_cola_33.TabIndex = 77;
+            this.antal_cola_33.ValueChanged += new System.EventHandler(this.udregning_lille_cola_button);
             // 
             // bestil_button
             // 
@@ -1211,7 +1229,7 @@
         private System.Windows.Forms.NumericUpDown antal_fanta_33;
         private System.Windows.Forms.NumericUpDown antal_cola_150;
         private System.Windows.Forms.NumericUpDown antal_cola_50;
-        private System.Windows.Forms.Label pris_150_pris;
+        private System.Windows.Forms.Label sprite_150_pris;
         private System.Windows.Forms.Label sprite_50_pris;
         private System.Windows.Forms.Label sprite_33_pris;
         private System.Windows.Forms.Label fanta_150_pris;

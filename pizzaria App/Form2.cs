@@ -19,7 +19,7 @@ namespace pizzaria_App
 
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void afbryd_button_Click(object sender, EventArgs e)
