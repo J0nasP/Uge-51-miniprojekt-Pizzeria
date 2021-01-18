@@ -117,7 +117,7 @@ namespace pizzaria_App
 
         #endregion
 
-        #region Label calculation "value change buttons" methods
+        #region udregning af pizza metoder "label value change"
 
         private void udregning_salat_60_label()
         {
@@ -158,7 +158,9 @@ namespace pizzaria_App
         {
             udregning_90_cm(antal_90_fantasi, fantasi_90_pris_total);
         }
+        #endregion 
 
+        #region udregning af sodavand metoder "label value change"
         private void udregning_cola_lille_label()
         {
             udregning_lille_soda(antal_cola_33, cola_33_pris);
