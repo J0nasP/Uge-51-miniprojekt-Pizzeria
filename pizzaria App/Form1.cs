@@ -25,7 +25,7 @@ namespace pizzaria_App
         }
 
 
-        #region form button methods
+        #region open new form button methods
 
         //Method that opens a new form containing the possible extra topping possibilities
         private void open_tilbehoer()
@@ -34,26 +34,64 @@ namespace pizzaria_App
             form2.ShowDialog();
         }
 
-        private void open_godkendt()
+        // Method taht opens a new form containing the "godkendt ordrer"
+        private void open_godkendt_order()
         {
             godkendt_bestilling form3 = new godkendt_bestilling();
             form3.ShowDialog();
         }
 
+        #endregion
+
+        #region open new form buttons
+        private void tilbehoer_skinke_60_Click(object sender, EventArgs e)
+        {
+            open_tilbehoer();
+        }
+
+        private void tilbehoer_skinke_90_Click(object sender, EventArgs e)
+        {
+            open_tilbehoer();
+        }
+
+        private void tilbehoer_peperoni_60_Click(object sender, EventArgs e)
+        {
+            open_tilbehoer();
+        }
+
+        private void tilbehoer_peperoni_90_Click(object sender, EventArgs e)
+        {
+            open_tilbehoer();
+        }
+
+        private void tilbehoer_salat_60_Click(object sender, EventArgs e)
+        {
+            open_tilbehoer();
+        }
+
+        private void tilbehoer_salat_90_Click(object sender, EventArgs e)
+        {
+            open_tilbehoer();
+        }
+
+        private void tilbehoer_fantasi_60_Click(object sender, EventArgs e)
+        {
+            open_tilbehoer();
+        }
+
+        private void tilbehoer_fantasi_90_Click(object sender, EventArgs e)
+        {
+            open_tilbehoer();
+        }
+
+        private void bestil_button_Click(object sender, EventArgs e)
+        {
+            open_godkendt_order();
+        }
+
 
         #endregion
 
-
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
 
         #region udregning af pris på pizza
 
@@ -81,6 +119,9 @@ namespace pizzaria_App
             int total_pris_fantasi = Convert.ToInt32(fantasi_60) + Convert.ToInt32(fantasi_90);
             return total_pris_fantasi;
         }
+        
+
+
 
         #endregion
 
@@ -122,6 +163,7 @@ namespace pizzaria_App
         private void udregning_salat_60_label()
         {
             udregning_60_cm(antal_60_salat, salat_60_pris_total);
+            
         }
 
         private void udregning_salat_90_label()
@@ -158,6 +200,8 @@ namespace pizzaria_App
         {
             udregning_90_cm(antal_90_fantasi, fantasi_90_pris_total);
         }
+
+
         #endregion 
 
         #region udregning af sodavand metoder "label value change"
@@ -208,54 +252,6 @@ namespace pizzaria_App
 
         #endregion
 
-        #region open new form buttons
-        private void tilbehoer_skinke_60_Click(object sender, EventArgs e)
-        {
-            open_tilbehoer();
-        }
-
-        private void tilbehoer_skinke_90_Click(object sender, EventArgs e)
-        {
-            open_tilbehoer();
-        }
-
-        private void tilbehoer_peperoni_60_Click(object sender, EventArgs e)
-        {
-            open_tilbehoer();
-        }
-
-        private void tilbehoer_peperoni_90_Click(object sender, EventArgs e)
-        {
-            open_tilbehoer();
-        }
-
-        private void tilbehoer_salat_60_Click(object sender, EventArgs e)
-        {
-            open_tilbehoer();
-        }
-
-        private void tilbehoer_salat_90_Click(object sender, EventArgs e)
-        {
-            open_tilbehoer();
-        }
-
-        private void tilbehoer_fantasi_60_Click(object sender, EventArgs e)
-        {
-            open_tilbehoer();
-        }
-
-        private void tilbehoer_fantasi_90_Click(object sender, EventArgs e)
-        {
-            open_tilbehoer();
-        }
-
-        private void bestil_button_Click(object sender, EventArgs e)
-        {
-            open_godkendt();
-        }
-
-
-        #endregion
 
         #region udregning af pris pizza buttons
         private void udregning_salat_60_button(object sender, EventArgs e)

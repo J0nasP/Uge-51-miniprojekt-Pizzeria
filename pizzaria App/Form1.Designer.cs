@@ -309,7 +309,6 @@
             this.fantasi_90_pris_total.Size = new System.Drawing.Size(16, 17);
             this.fantasi_90_pris_total.TabIndex = 67;
             this.fantasi_90_pris_total.Text = "0";
-            this.fantasi_90_pris_total.Click += new System.EventHandler(this.label16_Click);
             // 
             // fantasi_60_pris_total
             // 
@@ -380,7 +379,6 @@
             this.peperoni_60_pris_total.Size = new System.Drawing.Size(16, 17);
             this.peperoni_60_pris_total.TabIndex = 67;
             this.peperoni_60_pris_total.Text = "0";
-            this.peperoni_60_pris_total.Click += new System.EventHandler(this.label11_Click);
             // 
             // skinke_90_pris_total
             // 
