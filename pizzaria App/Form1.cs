@@ -97,27 +97,38 @@ namespace pizzaria_App
 
         private int udregning_skinke(Label skinke_60, Label skinke_90)
         {
-            int total_pris_skinke = Convert.ToInt32(skinke_60) + Convert.ToInt32(skinke_90);
+            int total_pris_skinke = Convert.ToInt32(skinke_60.Text) + Convert.ToInt32(skinke_90.Text);
             return total_pris_skinke;
         }
 
 
         private int udregning_peperoni(Label peperoni_60, Label peperoni_90)
         {
-            int total_pris_peperoni = Convert.ToInt32(peperoni_60) + Convert.ToInt32(peperoni_90);
+            int total_pris_peperoni = Convert.ToInt32(peperoni_60.Text) + Convert.ToInt32(peperoni_90.Text);
             return total_pris_peperoni;
         }
 
         private int udregning_salat(Label salat_60, Label salat_90)
         {
-            int total_pris_salat = Convert.ToInt32(salat_60) + Convert.ToInt32(salat_90);
+            int total_pris_salat = Convert.ToInt32(salat_60.Text) + Convert.ToInt32(salat_90.Text);
             return total_pris_salat;
         }
 
         private int udregning_fantasi(Label fantasi_60, Label fantasi_90)
         {
-            int total_pris_fantasi = Convert.ToInt32(fantasi_60) + Convert.ToInt32(fantasi_90);
+            int total_pris_fantasi = Convert.ToInt32(fantasi_60.Text) + Convert.ToInt32(fantasi_90.Text);
             return total_pris_fantasi;
+        }
+
+        private void udregning_pizza_total(Label total_pizza_label)
+        {
+            int skinke = udregning_skinke(skinke_60_pris_total, skinke_90_pris_total);
+            int peperoni = udregning_peperoni(peperoni_60_pris_total, peperoni_90_pris_total);
+            int salat = udregning_salat(salat_60_pris_total, salat_90_pris_total);
+            int fantasi = udregning_fantasi(fantasi_60_pris_total, fantasi_90_pris_total);
+
+            int pizza_total_number = skinke + peperoni + salat + fantasi;
+            total_pizza_label.Text = pizza_total_number.ToString() + " kr";
         }
         
 
@@ -129,13 +140,13 @@ namespace pizzaria_App
         private void udregning_60_cm(NumericUpDown antal, Label pris_total)
         {
             decimal value = antal.Value * 70;
-            pris_total.Text = value.ToString() + " kr";
+            pris_total.Text = value.ToString();
         }
 
         private void udregning_90_cm(NumericUpDown antal, Label pris_total)
         {
             decimal value = antal.Value * 140;
-            pris_total.Text = value.ToString() + " kr";
+            pris_total.Text = value.ToString();
         }
 
         private void udregning_lille_soda(NumericUpDown antal, Label pris_total)
@@ -159,6 +170,11 @@ namespace pizzaria_App
         #endregion
 
         #region udregning af pizza metoder "label value change"
+
+        private void udregning_pizza_total_label()
+        {
+            udregning_pizza_total(pizza_total_pris);
+        }
 
         private void udregning_salat_60_label()
         {
@@ -257,41 +273,49 @@ namespace pizzaria_App
         private void udregning_salat_60_button(object sender, EventArgs e)
         {
             udregning_salat_60_label();
+            udregning_pizza_total_label();
         }
 
         private void udregning_salat_90_button(object sender, EventArgs e)
         {
             udregning_salat_90_label();
+            udregning_pizza_total_label();
         }
 
         private void udregning_skinke_60_button(object sender, EventArgs e)
         {
             udregning_skinke_60_label();
+            udregning_pizza_total_label();
         }
 
         private void udregning_skinke_90_button(object sender, EventArgs e)
         {
             udregning_skinke_90_label();
+            udregning_pizza_total_label();
         }
 
         private void udregning_peperoni_60_button(object sender, EventArgs e)
         {
             udregning_peperoni_60_label();
+            udregning_pizza_total_label();
         }
 
         private void udregning_peperoni_90_button(object sender, EventArgs e)
         {
             udregning_peperoni_90_label();
+            udregning_pizza_total_label();
         }
 
         private void udregning_fantasi_60_button(object sender,EventArgs e)
         {
             udregning_fantasi_60_label();
+            udregning_pizza_total_label();
         }
 
         private void udregning_fantasi_90_button(object sender, EventArgs e)
         {
             udregning_fantasi_90_label();
+            udregning_pizza_total_label();
         }
 
         #endregion
