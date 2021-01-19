@@ -39,7 +39,6 @@
             this.peperoni_pizza_beskrivelse = new System.Windows.Forms.Label();
             this.label_salat_pizza_beskrivelse = new System.Windows.Forms.Label();
             this.bestillings_tabel = new System.Windows.Forms.TableLayoutPanel();
-            this.pizza_total_pris = new System.Windows.Forms.Label();
             this.fantasi_90_pris_total = new System.Windows.Forms.Label();
             this.fantasi_60_pris_total = new System.Windows.Forms.Label();
             this.salat_90_pris_total = new System.Windows.Forms.Label();
@@ -61,7 +60,6 @@
             this.pris_label = new System.Windows.Forms.Label();
             this.antal_60_peperoni = new System.Windows.Forms.NumericUpDown();
             this.vare_label = new System.Windows.Forms.Label();
-            this.total_label = new System.Windows.Forms.Label();
             this.antal_label = new System.Windows.Forms.Label();
             this.vare_skinke_60_label = new System.Windows.Forms.Label();
             this.antal_90_skinke = new System.Windows.Forms.NumericUpDown();
@@ -80,7 +78,6 @@
             this.tilbehoer_fantasi_60 = new System.Windows.Forms.Button();
             this.tilbehoer_fantasi_90 = new System.Windows.Forms.Button();
             this.overskrift_med_pris = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.antal_sprite_150 = new System.Windows.Forms.NumericUpDown();
             this.antal_sprite_50 = new System.Windows.Forms.NumericUpDown();
             this.antal_sprite_33 = new System.Windows.Forms.NumericUpDown();
@@ -101,9 +98,6 @@
             this.fanta_50_label = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.fanta_33_label = new System.Windows.Forms.Label();
-            this.antal_drikkevare = new System.Windows.Forms.Label();
-            this.vare_drikkevare = new System.Windows.Forms.Label();
-            this.pris_drikkevarer = new System.Windows.Forms.Label();
             this.cola_33_label = new System.Windows.Forms.Label();
             this.cola_50_label = new System.Windows.Forms.Label();
             this.cola_150_label = new System.Windows.Forms.Label();
@@ -111,9 +105,10 @@
             this.cola_33_pris = new System.Windows.Forms.Label();
             this.cola_50_pris = new System.Windows.Forms.Label();
             this.total_drikkevarer_label = new System.Windows.Forms.Label();
-            this.total_drikkevarer_pris = new System.Windows.Forms.Label();
+            this.total_pris = new System.Windows.Forms.Label();
             this.antal_cola_33 = new System.Windows.Forms.NumericUpDown();
             this.bestil_button = new System.Windows.Forms.Button();
+            this.drikkevare_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.skinke_pizza_billede)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peperoni_pizza_billede)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salat_pizza_billede)).BeginInit();
@@ -127,7 +122,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.antal_90_salat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.antal_60_salat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.antal_sprite_150)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.antal_sprite_50)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.antal_sprite_33)).BeginInit();
@@ -243,40 +237,67 @@
             this.bestillings_tabel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.bestillings_tabel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.bestillings_tabel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.bestillings_tabel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.bestillings_tabel.Controls.Add(this.pizza_total_pris, 2, 9);
             this.bestillings_tabel.Controls.Add(this.fantasi_90_pris_total, 2, 8);
+            this.bestillings_tabel.Controls.Add(this.sprite_150_pris, 2, 18);
+            this.bestillings_tabel.Controls.Add(this.antal_sprite_150, 0, 18);
+            this.bestillings_tabel.Controls.Add(this.sprite_50_pris, 2, 17);
+            this.bestillings_tabel.Controls.Add(this.total_pris, 2, 19);
+            this.bestillings_tabel.Controls.Add(this.total_drikkevarer_label, 0, 19);
             this.bestillings_tabel.Controls.Add(this.fantasi_60_pris_total, 2, 7);
+            this.bestillings_tabel.Controls.Add(this.sprite_33_pris, 2, 16);
+            this.bestillings_tabel.Controls.Add(this.antal_sprite_50, 0, 17);
             this.bestillings_tabel.Controls.Add(this.salat_90_pris_total, 2, 6);
+            this.bestillings_tabel.Controls.Add(this.antal_sprite_33, 0, 16);
             this.bestillings_tabel.Controls.Add(this.antal_90_fantasi, 0, 8);
+            this.bestillings_tabel.Controls.Add(this.antal_fanta_150, 0, 15);
             this.bestillings_tabel.Controls.Add(this.salat_60_pris_total, 2, 5);
+            this.bestillings_tabel.Controls.Add(this.antal_fanta_50, 0, 14);
+            this.bestillings_tabel.Controls.Add(this.sprite_150_label, 1, 18);
             this.bestillings_tabel.Controls.Add(this.antal_60_fantasi, 0, 7);
+            this.bestillings_tabel.Controls.Add(this.sprite_50_label, 1, 17);
+            this.bestillings_tabel.Controls.Add(this.antal_fanta_33, 0, 13);
+            this.bestillings_tabel.Controls.Add(this.label2, 1, 16);
             this.bestillings_tabel.Controls.Add(this.peperoni_90_pris_total, 2, 4);
+            this.bestillings_tabel.Controls.Add(this.antal_cola_150, 0, 12);
+            this.bestillings_tabel.Controls.Add(this.fanta_50_label, 1, 14);
             this.bestillings_tabel.Controls.Add(this.peperoni_60_pris_total, 2, 3);
+            this.bestillings_tabel.Controls.Add(this.antal_cola_50, 0, 11);
+            this.bestillings_tabel.Controls.Add(this.fanta_150_pris, 2, 15);
+            this.bestillings_tabel.Controls.Add(this.fanta_150_label, 1, 15);
             this.bestillings_tabel.Controls.Add(this.skinke_90_pris_total, 2, 2);
+            this.bestillings_tabel.Controls.Add(this.fanta_50_pris, 2, 14);
             this.bestillings_tabel.Controls.Add(this.skinke_60_pris_total, 2, 1);
+            this.bestillings_tabel.Controls.Add(this.fanta_33_pris, 2, 13);
             this.bestillings_tabel.Controls.Add(this.vare_fantasi_90_label, 1, 8);
+            this.bestillings_tabel.Controls.Add(this.cola_150_pris, 2, 12);
             this.bestillings_tabel.Controls.Add(this.vare_fantasi_60_label, 1, 7);
             this.bestillings_tabel.Controls.Add(this.vare_salat_90_label, 1, 6);
             this.bestillings_tabel.Controls.Add(this.vare_salat_60_label, 1, 5);
             this.bestillings_tabel.Controls.Add(this.vare_peperoni_90_label, 1, 4);
             this.bestillings_tabel.Controls.Add(this.vare_peperoni_60_label, 1, 3);
+            this.bestillings_tabel.Controls.Add(this.fanta_33_label, 1, 13);
             this.bestillings_tabel.Controls.Add(this.vare_skinke_90_label, 1, 2);
             this.bestillings_tabel.Controls.Add(this.antal_90_peperoni, 0, 4);
             this.bestillings_tabel.Controls.Add(this.pris_label, 2, 0);
+            this.bestillings_tabel.Controls.Add(this.cola_50_pris, 2, 11);
+            this.bestillings_tabel.Controls.Add(this.cola_33_pris, 2, 10);
             this.bestillings_tabel.Controls.Add(this.antal_60_peperoni, 0, 3);
+            this.bestillings_tabel.Controls.Add(this.cola_150_label, 1, 12);
+            this.bestillings_tabel.Controls.Add(this.cola_50_label, 1, 11);
             this.bestillings_tabel.Controls.Add(this.vare_label, 1, 0);
-            this.bestillings_tabel.Controls.Add(this.total_label, 0, 9);
             this.bestillings_tabel.Controls.Add(this.antal_label, 0, 0);
             this.bestillings_tabel.Controls.Add(this.vare_skinke_60_label, 1, 1);
             this.bestillings_tabel.Controls.Add(this.antal_90_skinke, 0, 2);
+            this.bestillings_tabel.Controls.Add(this.cola_33_label, 1, 10);
             this.bestillings_tabel.Controls.Add(this.antal_60_skinke, 0, 1);
             this.bestillings_tabel.Controls.Add(this.antal_90_salat, 0, 6);
             this.bestillings_tabel.Controls.Add(this.antal_60_salat, 0, 5);
+            this.bestillings_tabel.Controls.Add(this.drikkevare_label, 1, 9);
+            this.bestillings_tabel.Controls.Add(this.antal_cola_33, 0, 10);
             this.bestillings_tabel.Location = new System.Drawing.Point(714, 42);
             this.bestillings_tabel.Margin = new System.Windows.Forms.Padding(4);
             this.bestillings_tabel.Name = "bestillings_tabel";
-            this.bestillings_tabel.RowCount = 10;
+            this.bestillings_tabel.RowCount = 20;
             this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
@@ -287,18 +308,18 @@
             this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.bestillings_tabel.Size = new System.Drawing.Size(373, 333);
+            this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.bestillings_tabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.bestillings_tabel.Size = new System.Drawing.Size(373, 646);
             this.bestillings_tabel.TabIndex = 28;
-            // 
-            // pizza_total_pris
-            // 
-            this.pizza_total_pris.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pizza_total_pris.AutoSize = true;
-            this.pizza_total_pris.Location = new System.Drawing.Point(308, 308);
-            this.pizza_total_pris.Name = "pizza_total_pris";
-            this.pizza_total_pris.Size = new System.Drawing.Size(16, 17);
-            this.pizza_total_pris.TabIndex = 67;
-            this.pizza_total_pris.Text = "0";
             // 
             // fantasi_90_pris_total
             // 
@@ -523,19 +544,6 @@
             this.vare_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.vare_label.UseMnemonic = false;
             // 
-            // total_label
-            // 
-            this.total_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.total_label.AutoSize = true;
-            this.total_label.Location = new System.Drawing.Point(4, 308);
-            this.total_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.total_label.Name = "total_label";
-            this.total_label.Size = new System.Drawing.Size(103, 17);
-            this.total_label.TabIndex = 32;
-            this.total_label.Text = "Total";
-            this.total_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.total_label.UseMnemonic = false;
-            // 
             // antal_label
             // 
             this.antal_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -723,65 +731,10 @@
             this.overskrift_med_pris.Text = "Pizza på 60 cm koster 70 kr. Pizza på 90 cm koster 140 kr.\r\nEkstra fyld koster 5 " +
     "kr ekstra.\r\nSodavand Lille: 15. Mellem: 25. Stor: 35";
             // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.Controls.Add(this.antal_sprite_150, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.antal_sprite_50, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.antal_sprite_33, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.antal_fanta_150, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.antal_fanta_50, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.antal_fanta_33, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.antal_cola_150, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.antal_cola_50, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.sprite_150_pris, 2, 9);
-            this.tableLayoutPanel1.Controls.Add(this.sprite_50_pris, 2, 8);
-            this.tableLayoutPanel1.Controls.Add(this.sprite_33_pris, 2, 7);
-            this.tableLayoutPanel1.Controls.Add(this.fanta_150_pris, 2, 6);
-            this.tableLayoutPanel1.Controls.Add(this.fanta_50_pris, 2, 5);
-            this.tableLayoutPanel1.Controls.Add(this.fanta_33_pris, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.cola_150_pris, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.sprite_150_label, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.sprite_50_label, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.fanta_50_label, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.fanta_33_label, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.antal_drikkevare, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.vare_drikkevare, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pris_drikkevarer, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.cola_33_label, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.cola_50_label, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.cola_150_label, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.fanta_150_label, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.cola_33_pris, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.cola_50_pris, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.total_drikkevarer_label, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.total_drikkevarer_pris, 2, 10);
-            this.tableLayoutPanel1.Controls.Add(this.antal_cola_33, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(715, 387);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 11;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(371, 365);
-            this.tableLayoutPanel1.TabIndex = 76;
-            // 
             // antal_sprite_150
             // 
             this.antal_sprite_150.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.antal_sprite_150.Location = new System.Drawing.Point(3, 301);
+            this.antal_sprite_150.Location = new System.Drawing.Point(3, 584);
             this.antal_sprite_150.Name = "antal_sprite_150";
             this.antal_sprite_150.Size = new System.Drawing.Size(105, 22);
             this.antal_sprite_150.TabIndex = 78;
@@ -790,7 +743,7 @@
             // antal_sprite_50
             // 
             this.antal_sprite_50.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.antal_sprite_50.Location = new System.Drawing.Point(3, 270);
+            this.antal_sprite_50.Location = new System.Drawing.Point(3, 553);
             this.antal_sprite_50.Name = "antal_sprite_50";
             this.antal_sprite_50.Size = new System.Drawing.Size(105, 22);
             this.antal_sprite_50.TabIndex = 78;
@@ -799,7 +752,7 @@
             // antal_sprite_33
             // 
             this.antal_sprite_33.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.antal_sprite_33.Location = new System.Drawing.Point(3, 239);
+            this.antal_sprite_33.Location = new System.Drawing.Point(3, 522);
             this.antal_sprite_33.Name = "antal_sprite_33";
             this.antal_sprite_33.Size = new System.Drawing.Size(105, 22);
             this.antal_sprite_33.TabIndex = 78;
@@ -808,7 +761,7 @@
             // antal_fanta_150
             // 
             this.antal_fanta_150.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.antal_fanta_150.Location = new System.Drawing.Point(3, 208);
+            this.antal_fanta_150.Location = new System.Drawing.Point(3, 491);
             this.antal_fanta_150.Name = "antal_fanta_150";
             this.antal_fanta_150.Size = new System.Drawing.Size(105, 22);
             this.antal_fanta_150.TabIndex = 78;
@@ -817,7 +770,7 @@
             // antal_fanta_50
             // 
             this.antal_fanta_50.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.antal_fanta_50.Location = new System.Drawing.Point(3, 177);
+            this.antal_fanta_50.Location = new System.Drawing.Point(3, 460);
             this.antal_fanta_50.Name = "antal_fanta_50";
             this.antal_fanta_50.Size = new System.Drawing.Size(105, 22);
             this.antal_fanta_50.TabIndex = 78;
@@ -826,7 +779,7 @@
             // antal_fanta_33
             // 
             this.antal_fanta_33.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.antal_fanta_33.Location = new System.Drawing.Point(3, 146);
+            this.antal_fanta_33.Location = new System.Drawing.Point(3, 429);
             this.antal_fanta_33.Name = "antal_fanta_33";
             this.antal_fanta_33.Size = new System.Drawing.Size(105, 22);
             this.antal_fanta_33.TabIndex = 78;
@@ -835,7 +788,7 @@
             // antal_cola_150
             // 
             this.antal_cola_150.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.antal_cola_150.Location = new System.Drawing.Point(3, 115);
+            this.antal_cola_150.Location = new System.Drawing.Point(3, 398);
             this.antal_cola_150.Name = "antal_cola_150";
             this.antal_cola_150.Size = new System.Drawing.Size(105, 22);
             this.antal_cola_150.TabIndex = 78;
@@ -844,7 +797,7 @@
             // antal_cola_50
             // 
             this.antal_cola_50.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.antal_cola_50.Location = new System.Drawing.Point(3, 84);
+            this.antal_cola_50.Location = new System.Drawing.Point(3, 367);
             this.antal_cola_50.Name = "antal_cola_50";
             this.antal_cola_50.Size = new System.Drawing.Size(105, 22);
             this.antal_cola_50.TabIndex = 78;
@@ -854,7 +807,7 @@
             // 
             this.sprite_150_pris.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sprite_150_pris.AutoSize = true;
-            this.sprite_150_pris.Location = new System.Drawing.Point(307, 304);
+            this.sprite_150_pris.Location = new System.Drawing.Point(308, 587);
             this.sprite_150_pris.Name = "sprite_150_pris";
             this.sprite_150_pris.Size = new System.Drawing.Size(16, 17);
             this.sprite_150_pris.TabIndex = 83;
@@ -864,7 +817,7 @@
             // 
             this.sprite_50_pris.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sprite_50_pris.AutoSize = true;
-            this.sprite_50_pris.Location = new System.Drawing.Point(307, 273);
+            this.sprite_50_pris.Location = new System.Drawing.Point(308, 556);
             this.sprite_50_pris.Name = "sprite_50_pris";
             this.sprite_50_pris.Size = new System.Drawing.Size(16, 17);
             this.sprite_50_pris.TabIndex = 83;
@@ -874,7 +827,7 @@
             // 
             this.sprite_33_pris.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sprite_33_pris.AutoSize = true;
-            this.sprite_33_pris.Location = new System.Drawing.Point(307, 242);
+            this.sprite_33_pris.Location = new System.Drawing.Point(308, 525);
             this.sprite_33_pris.Name = "sprite_33_pris";
             this.sprite_33_pris.Size = new System.Drawing.Size(16, 17);
             this.sprite_33_pris.TabIndex = 83;
@@ -884,7 +837,7 @@
             // 
             this.fanta_150_pris.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fanta_150_pris.AutoSize = true;
-            this.fanta_150_pris.Location = new System.Drawing.Point(307, 211);
+            this.fanta_150_pris.Location = new System.Drawing.Point(308, 494);
             this.fanta_150_pris.Name = "fanta_150_pris";
             this.fanta_150_pris.Size = new System.Drawing.Size(16, 17);
             this.fanta_150_pris.TabIndex = 83;
@@ -894,7 +847,7 @@
             // 
             this.fanta_50_pris.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fanta_50_pris.AutoSize = true;
-            this.fanta_50_pris.Location = new System.Drawing.Point(307, 180);
+            this.fanta_50_pris.Location = new System.Drawing.Point(308, 463);
             this.fanta_50_pris.Name = "fanta_50_pris";
             this.fanta_50_pris.Size = new System.Drawing.Size(16, 17);
             this.fanta_50_pris.TabIndex = 83;
@@ -904,7 +857,7 @@
             // 
             this.fanta_33_pris.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fanta_33_pris.AutoSize = true;
-            this.fanta_33_pris.Location = new System.Drawing.Point(307, 149);
+            this.fanta_33_pris.Location = new System.Drawing.Point(308, 432);
             this.fanta_33_pris.Name = "fanta_33_pris";
             this.fanta_33_pris.Size = new System.Drawing.Size(16, 17);
             this.fanta_33_pris.TabIndex = 83;
@@ -914,7 +867,7 @@
             // 
             this.cola_150_pris.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cola_150_pris.AutoSize = true;
-            this.cola_150_pris.Location = new System.Drawing.Point(307, 118);
+            this.cola_150_pris.Location = new System.Drawing.Point(308, 401);
             this.cola_150_pris.Name = "cola_150_pris";
             this.cola_150_pris.Size = new System.Drawing.Size(16, 17);
             this.cola_150_pris.TabIndex = 83;
@@ -924,7 +877,7 @@
             // 
             this.sprite_150_label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sprite_150_label.AutoSize = true;
-            this.sprite_150_label.Location = new System.Drawing.Point(126, 304);
+            this.sprite_150_label.Location = new System.Drawing.Point(127, 587);
             this.sprite_150_label.Name = "sprite_150_label";
             this.sprite_150_label.Size = new System.Drawing.Size(117, 17);
             this.sprite_150_label.TabIndex = 81;
@@ -934,7 +887,7 @@
             // 
             this.sprite_50_label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sprite_50_label.AutoSize = true;
-            this.sprite_50_label.Location = new System.Drawing.Point(121, 273);
+            this.sprite_50_label.Location = new System.Drawing.Point(122, 556);
             this.sprite_50_label.Name = "sprite_50_label";
             this.sprite_50_label.Size = new System.Drawing.Size(127, 17);
             this.sprite_50_label.TabIndex = 79;
@@ -944,7 +897,7 @@
             // 
             this.fanta_50_label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fanta_50_label.AutoSize = true;
-            this.fanta_50_label.Location = new System.Drawing.Point(122, 180);
+            this.fanta_50_label.Location = new System.Drawing.Point(122, 463);
             this.fanta_50_label.Name = "fanta_50_label";
             this.fanta_50_label.Size = new System.Drawing.Size(126, 17);
             this.fanta_50_label.TabIndex = 79;
@@ -954,7 +907,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(131, 242);
+            this.label2.Location = new System.Drawing.Point(131, 525);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 17);
             this.label2.TabIndex = 77;
@@ -964,47 +917,17 @@
             // 
             this.fanta_33_label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fanta_33_label.AutoSize = true;
-            this.fanta_33_label.Location = new System.Drawing.Point(131, 149);
+            this.fanta_33_label.Location = new System.Drawing.Point(132, 432);
             this.fanta_33_label.Name = "fanta_33_label";
             this.fanta_33_label.Size = new System.Drawing.Size(107, 17);
             this.fanta_33_label.TabIndex = 77;
             this.fanta_33_label.Text = "Lille Fanta 33 cl";
             // 
-            // antal_drikkevare
-            // 
-            this.antal_drikkevare.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.antal_drikkevare.AutoSize = true;
-            this.antal_drikkevare.Location = new System.Drawing.Point(35, 16);
-            this.antal_drikkevare.Name = "antal_drikkevare";
-            this.antal_drikkevare.Size = new System.Drawing.Size(40, 17);
-            this.antal_drikkevare.TabIndex = 0;
-            this.antal_drikkevare.Text = "Antal";
-            // 
-            // vare_drikkevare
-            // 
-            this.vare_drikkevare.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.vare_drikkevare.AutoSize = true;
-            this.vare_drikkevare.Location = new System.Drawing.Point(166, 16);
-            this.vare_drikkevare.Name = "vare_drikkevare";
-            this.vare_drikkevare.Size = new System.Drawing.Size(38, 17);
-            this.vare_drikkevare.TabIndex = 1;
-            this.vare_drikkevare.Text = "Vare";
-            // 
-            // pris_drikkevarer
-            // 
-            this.pris_drikkevarer.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pris_drikkevarer.AutoSize = true;
-            this.pris_drikkevarer.Location = new System.Drawing.Point(299, 16);
-            this.pris_drikkevarer.Name = "pris_drikkevarer";
-            this.pris_drikkevarer.Size = new System.Drawing.Size(32, 17);
-            this.pris_drikkevarer.TabIndex = 2;
-            this.pris_drikkevarer.Text = "Pris";
-            // 
             // cola_33_label
             // 
             this.cola_33_label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cola_33_label.AutoSize = true;
-            this.cola_33_label.Location = new System.Drawing.Point(135, 56);
+            this.cola_33_label.Location = new System.Drawing.Point(136, 339);
             this.cola_33_label.Name = "cola_33_label";
             this.cola_33_label.Size = new System.Drawing.Size(99, 17);
             this.cola_33_label.TabIndex = 3;
@@ -1014,7 +937,7 @@
             // 
             this.cola_50_label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cola_50_label.AutoSize = true;
-            this.cola_50_label.Location = new System.Drawing.Point(126, 87);
+            this.cola_50_label.Location = new System.Drawing.Point(126, 370);
             this.cola_50_label.Name = "cola_50_label";
             this.cola_50_label.Size = new System.Drawing.Size(118, 17);
             this.cola_50_label.TabIndex = 78;
@@ -1024,7 +947,7 @@
             // 
             this.cola_150_label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cola_150_label.AutoSize = true;
-            this.cola_150_label.Location = new System.Drawing.Point(131, 118);
+            this.cola_150_label.Location = new System.Drawing.Point(131, 401);
             this.cola_150_label.Name = "cola_150_label";
             this.cola_150_label.Size = new System.Drawing.Size(108, 17);
             this.cola_150_label.TabIndex = 80;
@@ -1034,7 +957,7 @@
             // 
             this.fanta_150_label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fanta_150_label.AutoSize = true;
-            this.fanta_150_label.Location = new System.Drawing.Point(127, 211);
+            this.fanta_150_label.Location = new System.Drawing.Point(127, 494);
             this.fanta_150_label.Name = "fanta_150_label";
             this.fanta_150_label.Size = new System.Drawing.Size(116, 17);
             this.fanta_150_label.TabIndex = 81;
@@ -1044,7 +967,7 @@
             // 
             this.cola_33_pris.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cola_33_pris.AutoSize = true;
-            this.cola_33_pris.Location = new System.Drawing.Point(307, 56);
+            this.cola_33_pris.Location = new System.Drawing.Point(308, 339);
             this.cola_33_pris.Name = "cola_33_pris";
             this.cola_33_pris.Size = new System.Drawing.Size(16, 17);
             this.cola_33_pris.TabIndex = 82;
@@ -1054,7 +977,7 @@
             // 
             this.cola_50_pris.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cola_50_pris.AutoSize = true;
-            this.cola_50_pris.Location = new System.Drawing.Point(307, 87);
+            this.cola_50_pris.Location = new System.Drawing.Point(308, 370);
             this.cola_50_pris.Name = "cola_50_pris";
             this.cola_50_pris.Size = new System.Drawing.Size(16, 17);
             this.cola_50_pris.TabIndex = 83;
@@ -1064,27 +987,27 @@
             // 
             this.total_drikkevarer_label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.total_drikkevarer_label.AutoSize = true;
-            this.total_drikkevarer_label.Location = new System.Drawing.Point(35, 338);
+            this.total_drikkevarer_label.Location = new System.Drawing.Point(35, 620);
             this.total_drikkevarer_label.Name = "total_drikkevarer_label";
             this.total_drikkevarer_label.Size = new System.Drawing.Size(40, 17);
             this.total_drikkevarer_label.TabIndex = 84;
             this.total_drikkevarer_label.Text = "Total";
             // 
-            // total_drikkevarer_pris
+            // total_pris
             // 
-            this.total_drikkevarer_pris.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.total_drikkevarer_pris.AutoSize = true;
-            this.total_drikkevarer_pris.Location = new System.Drawing.Point(307, 338);
-            this.total_drikkevarer_pris.Name = "total_drikkevarer_pris";
-            this.total_drikkevarer_pris.Size = new System.Drawing.Size(16, 17);
-            this.total_drikkevarer_pris.TabIndex = 85;
-            this.total_drikkevarer_pris.Text = "0";
+            this.total_pris.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.total_pris.AutoSize = true;
+            this.total_pris.Location = new System.Drawing.Point(308, 620);
+            this.total_pris.Name = "total_pris";
+            this.total_pris.Size = new System.Drawing.Size(16, 17);
+            this.total_pris.TabIndex = 85;
+            this.total_pris.Text = "0";
             // 
             // antal_cola_33
             // 
             this.antal_cola_33.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.antal_cola_33.BackColor = System.Drawing.Color.White;
-            this.antal_cola_33.Location = new System.Drawing.Point(3, 53);
+            this.antal_cola_33.Location = new System.Drawing.Point(3, 336);
             this.antal_cola_33.Name = "antal_cola_33";
             this.antal_cola_33.Size = new System.Drawing.Size(105, 22);
             this.antal_cola_33.TabIndex = 77;
@@ -1094,7 +1017,7 @@
             // 
             this.bestil_button.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.bestil_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bestil_button.Location = new System.Drawing.Point(399, 687);
+            this.bestil_button.Location = new System.Drawing.Point(793, 695);
             this.bestil_button.Name = "bestil_button";
             this.bestil_button.Size = new System.Drawing.Size(229, 55);
             this.bestil_button.TabIndex = 77;
@@ -1102,13 +1025,24 @@
             this.bestil_button.UseVisualStyleBackColor = false;
             this.bestil_button.Click += new System.EventHandler(this.bestil_button_Click);
             // 
+            // drikkevare_label
+            // 
+            this.drikkevare_label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.drikkevare_label.AutoSize = true;
+            this.drikkevare_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drikkevare_label.Location = new System.Drawing.Point(141, 307);
+            this.drikkevare_label.Name = "drikkevare_label";
+            this.drikkevare_label.Size = new System.Drawing.Size(89, 18);
+            this.drikkevare_label.TabIndex = 68;
+            this.drikkevare_label.Text = "Drikkevare";
+            this.drikkevare_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Bestillings_vindue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 764);
+            this.ClientSize = new System.Drawing.Size(1284, 847);
             this.Controls.Add(this.bestil_button);
-            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.overskrift_med_pris);
             this.Controls.Add(this.tilbehoer_fantasi_90);
             this.Controls.Add(this.tilbehoer_fantasi_60);
@@ -1149,8 +1083,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.antal_90_salat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.antal_60_salat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.antal_sprite_150)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.antal_sprite_50)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.antal_sprite_33)).EndInit();
@@ -1177,7 +1109,6 @@
         private System.Windows.Forms.Label peperoni_pizza_beskrivelse;
         private System.Windows.Forms.Label label_salat_pizza_beskrivelse;
         private System.Windows.Forms.TableLayoutPanel bestillings_tabel;
-        private System.Windows.Forms.Label total_label;
         private System.Windows.Forms.Label pris_label;
         private System.Windows.Forms.Label vare_label;
         private System.Windows.Forms.Label antal_label;
@@ -1199,7 +1130,6 @@
         private System.Windows.Forms.NumericUpDown antal_90_salat;
         private System.Windows.Forms.NumericUpDown antal_90_fantasi;
         private System.Windows.Forms.NumericUpDown antal_60_fantasi;
-        private System.Windows.Forms.Label pizza_total_pris;
         private System.Windows.Forms.Label fantasi_90_pris_total;
         private System.Windows.Forms.Label fantasi_60_pris_total;
         private System.Windows.Forms.Label salat_90_pris_total;
@@ -1218,7 +1148,6 @@
         private System.Windows.Forms.Button tilbehoer_fantasi_90;
         private System.Windows.Forms.NumericUpDown antal_60_salat;
         private System.Windows.Forms.Label overskrift_med_pris;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.NumericUpDown antal_sprite_150;
         private System.Windows.Forms.NumericUpDown antal_sprite_50;
         private System.Windows.Forms.NumericUpDown antal_sprite_33;
@@ -1239,9 +1168,6 @@
         private System.Windows.Forms.Label fanta_50_label;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label fanta_33_label;
-        private System.Windows.Forms.Label antal_drikkevare;
-        private System.Windows.Forms.Label vare_drikkevare;
-        private System.Windows.Forms.Label pris_drikkevarer;
         private System.Windows.Forms.Label cola_33_label;
         private System.Windows.Forms.Label cola_50_label;
         private System.Windows.Forms.Label cola_150_label;
@@ -1249,8 +1175,9 @@
         private System.Windows.Forms.Label cola_33_pris;
         private System.Windows.Forms.Label cola_50_pris;
         private System.Windows.Forms.Label total_drikkevarer_label;
-        private System.Windows.Forms.Label total_drikkevarer_pris;
+        private System.Windows.Forms.Label total_pris;
         private System.Windows.Forms.NumericUpDown antal_cola_33;
         private System.Windows.Forms.Button bestil_button;
+        private System.Windows.Forms.Label drikkevare_label;
     }
 }

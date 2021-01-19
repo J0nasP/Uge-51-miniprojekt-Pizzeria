@@ -295,7 +295,7 @@ namespace pizzaria_App
 
         private void udregning_soda_total_label()
         {
-            udregning_soda_total(total_drikkevarer_pris);
+            udregning_soda_total(total_pris);
         }
 
         #endregion
