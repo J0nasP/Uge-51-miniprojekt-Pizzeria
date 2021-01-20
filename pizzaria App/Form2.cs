@@ -39,16 +39,16 @@ namespace pizzaria_App
             if (tilbehoer_box.CheckedItems.Count != 0 )
             {
                 int i;
-                string s;
-                s = "Valgt tilbehør: \n";
+                string message;
+                message = "Valgt tilbehør: \n";
                 for (i = 0; i <= (tilbehoer_box.Items.Count-1); i++)
                 {
                     if (tilbehoer_box.GetItemChecked(i))
                     {
-                        s = s + "Tilbehør " + (i+1).ToString() + " = " + tilbehoer_box.Items[i].ToString() + "\n" ;
+                       message = message + "Tilbehør " + (i+1).ToString() + " = " + tilbehoer_box.Items[i].ToString() + "\n" ;
                     }
                 }
-                MessageBox.Show(s);
+                MessageBox.Show(message);
                 antal_tilbehoer_check();
             }
             else

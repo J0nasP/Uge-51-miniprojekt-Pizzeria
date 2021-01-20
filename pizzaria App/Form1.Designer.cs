@@ -136,7 +136,7 @@
             // skinke_pizza_billede
             // 
             this.skinke_pizza_billede.Image = ((System.Drawing.Image)(resources.GetObject("skinke_pizza_billede.Image")));
-            this.skinke_pizza_billede.Location = new System.Drawing.Point(16, 62);
+            this.skinke_pizza_billede.Location = new System.Drawing.Point(16, 106);
             this.skinke_pizza_billede.Margin = new System.Windows.Forms.Padding(4);
             this.skinke_pizza_billede.Name = "skinke_pizza_billede";
             this.skinke_pizza_billede.Size = new System.Drawing.Size(132, 108);
@@ -147,7 +147,7 @@
             // peperoni_pizza_billede
             // 
             this.peperoni_pizza_billede.Image = ((System.Drawing.Image)(resources.GetObject("peperoni_pizza_billede.Image")));
-            this.peperoni_pizza_billede.Location = new System.Drawing.Point(16, 213);
+            this.peperoni_pizza_billede.Location = new System.Drawing.Point(16, 253);
             this.peperoni_pizza_billede.Margin = new System.Windows.Forms.Padding(4);
             this.peperoni_pizza_billede.Name = "peperoni_pizza_billede";
             this.peperoni_pizza_billede.Size = new System.Drawing.Size(132, 108);
@@ -160,7 +160,7 @@
             this.label_pizza_skinke.AccessibleName = "";
             this.label_pizza_skinke.AutoSize = true;
             this.label_pizza_skinke.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_pizza_skinke.Location = new System.Drawing.Point(16, 42);
+            this.label_pizza_skinke.Location = new System.Drawing.Point(19, 84);
             this.label_pizza_skinke.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_pizza_skinke.Name = "label_pizza_skinke";
             this.label_pizza_skinke.Size = new System.Drawing.Size(110, 18);
@@ -171,7 +171,7 @@
             // 
             this.label_pizza_peperoni.AutoSize = true;
             this.label_pizza_peperoni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_pizza_peperoni.Location = new System.Drawing.Point(16, 193);
+            this.label_pizza_peperoni.Location = new System.Drawing.Point(16, 231);
             this.label_pizza_peperoni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_pizza_peperoni.Name = "label_pizza_peperoni";
             this.label_pizza_peperoni.Size = new System.Drawing.Size(124, 18);
@@ -181,7 +181,7 @@
             // salat_pizza_billede
             // 
             this.salat_pizza_billede.Image = ((System.Drawing.Image)(resources.GetObject("salat_pizza_billede.Image")));
-            this.salat_pizza_billede.Location = new System.Drawing.Point(16, 356);
+            this.salat_pizza_billede.Location = new System.Drawing.Point(16, 399);
             this.salat_pizza_billede.Margin = new System.Windows.Forms.Padding(4);
             this.salat_pizza_billede.Name = "salat_pizza_billede";
             this.salat_pizza_billede.Size = new System.Drawing.Size(132, 108);
@@ -193,7 +193,7 @@
             // 
             this.label_pizza_salat.AutoSize = true;
             this.label_pizza_salat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_pizza_salat.Location = new System.Drawing.Point(16, 336);
+            this.label_pizza_salat.Location = new System.Drawing.Point(16, 377);
             this.label_pizza_salat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_pizza_salat.Name = "label_pizza_salat";
             this.label_pizza_salat.Size = new System.Drawing.Size(98, 18);
@@ -203,7 +203,7 @@
             // skinke_pizza_beskrivelse
             // 
             this.skinke_pizza_beskrivelse.AutoSize = true;
-            this.skinke_pizza_beskrivelse.Location = new System.Drawing.Point(156, 106);
+            this.skinke_pizza_beskrivelse.Location = new System.Drawing.Point(153, 157);
             this.skinke_pizza_beskrivelse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.skinke_pizza_beskrivelse.Name = "skinke_pizza_beskrivelse";
             this.skinke_pizza_beskrivelse.Size = new System.Drawing.Size(212, 17);
@@ -213,7 +213,7 @@
             // peperoni_pizza_beskrivelse
             // 
             this.peperoni_pizza_beskrivelse.AutoSize = true;
-            this.peperoni_pizza_beskrivelse.Location = new System.Drawing.Point(156, 260);
+            this.peperoni_pizza_beskrivelse.Location = new System.Drawing.Point(153, 303);
             this.peperoni_pizza_beskrivelse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.peperoni_pizza_beskrivelse.Name = "peperoni_pizza_beskrivelse";
             this.peperoni_pizza_beskrivelse.Size = new System.Drawing.Size(227, 17);
@@ -223,7 +223,7 @@
             // label_salat_pizza_beskrivelse
             // 
             this.label_salat_pizza_beskrivelse.AutoSize = true;
-            this.label_salat_pizza_beskrivelse.Location = new System.Drawing.Point(156, 399);
+            this.label_salat_pizza_beskrivelse.Location = new System.Drawing.Point(153, 455);
             this.label_salat_pizza_beskrivelse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_salat_pizza_beskrivelse.Name = "label_salat_pizza_beskrivelse";
             this.label_salat_pizza_beskrivelse.Size = new System.Drawing.Size(250, 17);
@@ -611,18 +611,19 @@
             // fatasi_pizza_beskrivelse
             // 
             this.fatasi_pizza_beskrivelse.AutoSize = true;
-            this.fatasi_pizza_beskrivelse.Location = new System.Drawing.Point(156, 546);
+            this.fatasi_pizza_beskrivelse.Location = new System.Drawing.Point(153, 597);
             this.fatasi_pizza_beskrivelse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.fatasi_pizza_beskrivelse.Name = "fatasi_pizza_beskrivelse";
             this.fatasi_pizza_beskrivelse.Size = new System.Drawing.Size(230, 17);
             this.fatasi_pizza_beskrivelse.TabIndex = 32;
             this.fatasi_pizza_beskrivelse.Text = "Lav din egen pizza (max 4 stk. fyld)";
+            this.fatasi_pizza_beskrivelse.Click += new System.EventHandler(this.fatasi_pizza_beskrivelse_Click);
             // 
             // vaelg_selv_pizza_label
             // 
             this.vaelg_selv_pizza_label.AutoSize = true;
             this.vaelg_selv_pizza_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vaelg_selv_pizza_label.Location = new System.Drawing.Point(16, 484);
+            this.vaelg_selv_pizza_label.Location = new System.Drawing.Point(16, 524);
             this.vaelg_selv_pizza_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.vaelg_selv_pizza_label.Name = "vaelg_selv_pizza_label";
             this.vaelg_selv_pizza_label.Size = new System.Drawing.Size(113, 18);
@@ -632,7 +633,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(16, 503);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 546);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(132, 108);
@@ -1042,7 +1043,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 847);
+            this.ClientSize = new System.Drawing.Size(1284, 771);
             this.Controls.Add(this.bestil_button);
             this.Controls.Add(this.overskrift_med_pris);
             this.Controls.Add(this.tilbehoer_fantasi_90);

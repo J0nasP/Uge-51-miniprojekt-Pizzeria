@@ -187,15 +187,11 @@ namespace pizzaria_App
             pris_total.Text = value.ToString();
         }
 
-        private void udregning_total(Label pris)
-        {
-           int value = udregning_total_pris();
-            pris.Text = value.ToString();
-        }
+
 
         #endregion
 
-
+        #region udregning af total pris
         private int udregning_total_pris()
         {
             int total_pris_soda = udregning_soda_total();
@@ -209,6 +205,14 @@ namespace pizzaria_App
         {
             udregning_total(total_pris);
         }
+
+        private void udregning_total(Label pris)
+        {
+            int value = udregning_total_pris();
+            pris.Text = value.ToString() + " kr.";
+        }
+
+        #endregion
 
         #region udregning af pizza metoder "label value change"
 
@@ -416,5 +420,10 @@ namespace pizzaria_App
             udregning_total_pris_label();
         }
         #endregion
+
+        private void fatasi_pizza_beskrivelse_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
