@@ -987,9 +987,10 @@
             // 
             this.total_drikkevarer_label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.total_drikkevarer_label.AutoSize = true;
-            this.total_drikkevarer_label.Location = new System.Drawing.Point(35, 620);
+            this.total_drikkevarer_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_drikkevarer_label.Location = new System.Drawing.Point(33, 620);
             this.total_drikkevarer_label.Name = "total_drikkevarer_label";
-            this.total_drikkevarer_label.Size = new System.Drawing.Size(40, 17);
+            this.total_drikkevarer_label.Size = new System.Drawing.Size(45, 17);
             this.total_drikkevarer_label.TabIndex = 84;
             this.total_drikkevarer_label.Text = "Total";
             // 

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace pizzaria_App
@@ -120,7 +113,7 @@ namespace pizzaria_App
             return total_pris_fantasi;
         }
 
-        private void udregning_pizza_total(Label total_pizza_label)
+        private int udregning_pizza_total()
         {
             int skinke = udregning_skinke(skinke_60_pris_total, skinke_90_pris_total);
             int peperoni = udregning_peperoni(peperoni_60_pris_total, peperoni_90_pris_total);
@@ -128,7 +121,7 @@ namespace pizzaria_App
             int fantasi = udregning_fantasi(fantasi_60_pris_total, fantasi_90_pris_total);
 
             int pizza_total_number = skinke + peperoni + salat + fantasi;
-            total_pizza_label.Text = pizza_total_number.ToString() + " kr";
+            return pizza_total_number;
         }
 
         #region udregning af pris på sodavand
@@ -150,14 +143,14 @@ namespace pizzaria_App
             return total_pris_sprite;
         }
 
-        private void udregning_soda_total(Label total_drikkevarer_label)
+        private int udregning_soda_total()
         {
             int cola = udregning_cola(cola_33_pris, cola_50_pris, cola_150_pris);
             int fanta = udregning_fanta(fanta_33_pris, fanta_50_pris, fanta_150_pris);
             int sprite = udregning_sprite(sprite_33_pris, sprite_50_pris, sprite_150_pris);
 
             int soda_total_number = cola + fanta + sprite;
-            total_drikkevarer_label.Text = soda_total_number.ToString() + " kr";
+            return soda_total_number;
         }
         #endregion
 
@@ -194,14 +187,30 @@ namespace pizzaria_App
             pris_total.Text = value.ToString();
         }
 
+        private void udregning_total(Label pris)
+        {
+           int value = udregning_total_pris();
+            pris.Text = value.ToString();
+        }
+
         #endregion
 
-        #region udregning af pizza metoder "label value change"
 
-        private void udregning_pizza_total_label()
+        private int udregning_total_pris()
         {
-            udregning_pizza_total(pizza_total_pris);
+            int total_pris_soda = udregning_soda_total();
+            int total_pris_pizza = udregning_pizza_total();
+            int total_pris = total_pris_pizza + total_pris_soda;
+            return total_pris;
+            
         }
+
+        private void udregning_total_pris_label()
+        {
+            udregning_total(total_pris);
+        }
+
+        #region udregning af pizza metoder "label value change"
 
         private void udregning_salat_60_label()
         {
@@ -295,7 +304,7 @@ namespace pizzaria_App
 
         private void udregning_soda_total_label()
         {
-            udregning_soda_total(total_pris);
+            udregning_soda_total();
         }
 
         #endregion
@@ -305,49 +314,49 @@ namespace pizzaria_App
         private void udregning_salat_60_button(object sender, EventArgs e)
         {
             udregning_salat_60_label();
-            udregning_pizza_total_label();
+            udregning_total_pris_label();
         }
 
         private void udregning_salat_90_button(object sender, EventArgs e)
         {
             udregning_salat_90_label();
-            udregning_pizza_total_label();
+            udregning_total_pris_label();
         }
 
         private void udregning_skinke_60_button(object sender, EventArgs e)
         {
             udregning_skinke_60_label();
-            udregning_pizza_total_label();
+            udregning_total_pris_label();
         }
 
         private void udregning_skinke_90_button(object sender, EventArgs e)
         {
             udregning_skinke_90_label();
-            udregning_pizza_total_label();
+            udregning_total_pris_label();
         }
 
         private void udregning_peperoni_60_button(object sender, EventArgs e)
         {
             udregning_peperoni_60_label();
-            udregning_pizza_total_label();
+            udregning_total_pris_label();
         }
 
         private void udregning_peperoni_90_button(object sender, EventArgs e)
         {
             udregning_peperoni_90_label();
-            udregning_pizza_total_label();
+            udregning_total_pris_label();
         }
 
         private void udregning_fantasi_60_button(object sender,EventArgs e)
         {
             udregning_fantasi_60_label();
-            udregning_pizza_total_label();
+            udregning_total_pris_label();
         }
 
         private void udregning_fantasi_90_button(object sender, EventArgs e)
         {
             udregning_fantasi_90_label();
-            udregning_pizza_total_label();
+            udregning_total_pris_label();
         }
 
         #endregion
@@ -356,55 +365,55 @@ namespace pizzaria_App
         private void udregning_lille_cola_button(object sender, EventArgs e)
         {
             udregning_cola_lille_label();
-            udregning_soda_total_label();
+            udregning_total_pris_label();
         }
 
         private void udregning_mellem_cola_button(object sender, EventArgs e)
         {
             udregning_cola_mellem_label();
-            udregning_soda_total_label();
+            udregning_total_pris_label();
         }
 
         private void udregning_stor_cola_button(object sender, EventArgs e)
         {
             udregning_cola_stor_label();
-            udregning_soda_total_label();
+            udregning_total_pris_label();
         }
 
         private void udregning_lille_sprite_button(object sender, EventArgs e)
         {
             udregning_sprite_lille();
-            udregning_soda_total_label();
+            udregning_total_pris_label();
         }
 
         private void udregning_mellem_sprite_button(object sender, EventArgs e)
         {
             udregning_sprite_mellem();
-            udregning_soda_total_label();
+            udregning_total_pris_label();
         }
 
         private void udregning_stor_sprite_button(object sender, EventArgs e)
         {
             udregning_sprite_stor();
-            udregning_soda_total_label();
+            udregning_total_pris_label();
         }
 
         private void udregning_lille_fanta_button(object sender, EventArgs e)
         {
             udregning_fanta_lille_label();
-            udregning_soda_total_label();
+            udregning_total_pris_label();
         }
 
         private void udregning_mellem_fanta_button(object sender, EventArgs e)
         {
             udregning_fanta_mellem_label();
-            udregning_soda_total_label();
+            udregning_total_pris_label();
         }
 
         private void udregning_stor_fanta_button(object sender, EventArgs e)
         {
             udregning_fanta_stor();
-            udregning_soda_total_label();
+            udregning_total_pris_label();
         }
         #endregion
     }
