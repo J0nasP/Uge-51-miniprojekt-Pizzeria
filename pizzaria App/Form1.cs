@@ -124,6 +124,8 @@ namespace pizzaria_App
             return pizza_total_number;
         }
 
+        #endregion
+
         #region udregning af pris på sodavand
         private int udregning_cola(Label cola_33, Label cola_50, Label cola_150)
         {
@@ -153,6 +155,14 @@ namespace pizzaria_App
             return soda_total_number;
         }
         #endregion
+
+        #region udregning er tilbehør count
+
+        private void udregning_tilbehoer()
+        {
+
+
+        }
 
         #endregion
 
@@ -192,6 +202,7 @@ namespace pizzaria_App
         #endregion
 
         #region udregning af total pris
+
         private int udregning_total_pris()
         {
             int total_pris_soda = udregning_soda_total();
@@ -313,7 +324,6 @@ namespace pizzaria_App
 
         #endregion
 
-
         #region udregning af pris pizza buttons
         private void udregning_salat_60_button(object sender, EventArgs e)
         {
@@ -420,10 +430,5 @@ namespace pizzaria_App
             udregning_total_pris_label();
         }
         #endregion
-
-        private void fatasi_pizza_beskrivelse_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

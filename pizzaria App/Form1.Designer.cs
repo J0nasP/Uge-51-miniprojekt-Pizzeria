@@ -109,6 +109,14 @@
             this.antal_cola_33 = new System.Windows.Forms.NumericUpDown();
             this.bestil_button = new System.Windows.Forms.Button();
             this.drikkevare_label = new System.Windows.Forms.Label();
+            this.skinke_60_tilbehoer = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.skinke_pizza_billede)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peperoni_pizza_billede)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salat_pizza_billede)).BeginInit();
@@ -617,7 +625,6 @@
             this.fatasi_pizza_beskrivelse.Size = new System.Drawing.Size(230, 17);
             this.fatasi_pizza_beskrivelse.TabIndex = 32;
             this.fatasi_pizza_beskrivelse.Text = "Lav din egen pizza (max 4 stk. fyld)";
-            this.fatasi_pizza_beskrivelse.Click += new System.EventHandler(this.fatasi_pizza_beskrivelse_Click);
             // 
             // vaelg_selv_pizza_label
             // 
@@ -643,7 +650,7 @@
             // 
             // tilbehoer_skinke_60
             // 
-            this.tilbehoer_skinke_60.Location = new System.Drawing.Point(634, 98);
+            this.tilbehoer_skinke_60.Location = new System.Drawing.Point(607, 95);
             this.tilbehoer_skinke_60.Name = "tilbehoer_skinke_60";
             this.tilbehoer_skinke_60.Size = new System.Drawing.Size(73, 24);
             this.tilbehoer_skinke_60.TabIndex = 67;
@@ -653,7 +660,7 @@
             // 
             // tilbehoer_skinke_90
             // 
-            this.tilbehoer_skinke_90.Location = new System.Drawing.Point(634, 130);
+            this.tilbehoer_skinke_90.Location = new System.Drawing.Point(607, 126);
             this.tilbehoer_skinke_90.Name = "tilbehoer_skinke_90";
             this.tilbehoer_skinke_90.Size = new System.Drawing.Size(73, 24);
             this.tilbehoer_skinke_90.TabIndex = 68;
@@ -663,7 +670,7 @@
             // 
             // tilbehoer_peperoni_60
             // 
-            this.tilbehoer_peperoni_60.Location = new System.Drawing.Point(634, 160);
+            this.tilbehoer_peperoni_60.Location = new System.Drawing.Point(607, 160);
             this.tilbehoer_peperoni_60.Name = "tilbehoer_peperoni_60";
             this.tilbehoer_peperoni_60.Size = new System.Drawing.Size(73, 24);
             this.tilbehoer_peperoni_60.TabIndex = 69;
@@ -673,7 +680,7 @@
             // 
             // tilbehoer_peperoni_90
             // 
-            this.tilbehoer_peperoni_90.Location = new System.Drawing.Point(634, 188);
+            this.tilbehoer_peperoni_90.Location = new System.Drawing.Point(607, 193);
             this.tilbehoer_peperoni_90.Name = "tilbehoer_peperoni_90";
             this.tilbehoer_peperoni_90.Size = new System.Drawing.Size(73, 24);
             this.tilbehoer_peperoni_90.TabIndex = 70;
@@ -683,7 +690,7 @@
             // 
             // tilbehoer_salat_60
             // 
-            this.tilbehoer_salat_60.Location = new System.Drawing.Point(634, 223);
+            this.tilbehoer_salat_60.Location = new System.Drawing.Point(607, 223);
             this.tilbehoer_salat_60.Name = "tilbehoer_salat_60";
             this.tilbehoer_salat_60.Size = new System.Drawing.Size(73, 24);
             this.tilbehoer_salat_60.TabIndex = 71;
@@ -693,7 +700,7 @@
             // 
             // tilbehoer_salat_90
             // 
-            this.tilbehoer_salat_90.Location = new System.Drawing.Point(634, 253);
+            this.tilbehoer_salat_90.Location = new System.Drawing.Point(607, 257);
             this.tilbehoer_salat_90.Name = "tilbehoer_salat_90";
             this.tilbehoer_salat_90.Size = new System.Drawing.Size(73, 24);
             this.tilbehoer_salat_90.TabIndex = 72;
@@ -703,7 +710,7 @@
             // 
             // tilbehoer_fantasi_60
             // 
-            this.tilbehoer_fantasi_60.Location = new System.Drawing.Point(634, 281);
+            this.tilbehoer_fantasi_60.Location = new System.Drawing.Point(607, 288);
             this.tilbehoer_fantasi_60.Name = "tilbehoer_fantasi_60";
             this.tilbehoer_fantasi_60.Size = new System.Drawing.Size(73, 24);
             this.tilbehoer_fantasi_60.TabIndex = 73;
@@ -713,7 +720,7 @@
             // 
             // tilbehoer_fantasi_90
             // 
-            this.tilbehoer_fantasi_90.Location = new System.Drawing.Point(634, 315);
+            this.tilbehoer_fantasi_90.Location = new System.Drawing.Point(607, 318);
             this.tilbehoer_fantasi_90.Name = "tilbehoer_fantasi_90";
             this.tilbehoer_fantasi_90.Size = new System.Drawing.Size(73, 24);
             this.tilbehoer_fantasi_90.TabIndex = 74;
@@ -1039,11 +1046,99 @@
             this.drikkevare_label.Text = "Drikkevare";
             this.drikkevare_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // skinke_60_tilbehoer
+            // 
+            this.skinke_60_tilbehoer.AutoSize = true;
+            this.skinke_60_tilbehoer.Location = new System.Drawing.Point(686, 100);
+            this.skinke_60_tilbehoer.Name = "skinke_60_tilbehoer";
+            this.skinke_60_tilbehoer.Size = new System.Drawing.Size(16, 17);
+            this.skinke_60_tilbehoer.TabIndex = 78;
+            this.skinke_60_tilbehoer.Text = "0";
+            this.skinke_60_tilbehoer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(686, 130);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(16, 17);
+            this.label1.TabIndex = 79;
+            this.label1.Text = "0";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(686, 164);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(16, 17);
+            this.label3.TabIndex = 80;
+            this.label3.Text = "0";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(686, 193);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(16, 17);
+            this.label4.TabIndex = 81;
+            this.label4.Text = "0";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(686, 227);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(16, 17);
+            this.label5.TabIndex = 82;
+            this.label5.Text = "0";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(686, 261);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(16, 17);
+            this.label6.TabIndex = 83;
+            this.label6.Text = "0";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(686, 288);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(16, 17);
+            this.label7.TabIndex = 84;
+            this.label7.Text = "0";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(686, 318);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(16, 17);
+            this.label8.TabIndex = 85;
+            this.label8.Text = "0";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Bestillings_vindue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 771);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.skinke_60_tilbehoer);
             this.Controls.Add(this.bestil_button);
             this.Controls.Add(this.overskrift_med_pris);
             this.Controls.Add(this.tilbehoer_fantasi_90);
@@ -1181,5 +1276,13 @@
         private System.Windows.Forms.NumericUpDown antal_cola_33;
         private System.Windows.Forms.Button bestil_button;
         private System.Windows.Forms.Label drikkevare_label;
+        private System.Windows.Forms.Label skinke_60_tilbehoer;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

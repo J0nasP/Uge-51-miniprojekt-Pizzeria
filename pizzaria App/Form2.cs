@@ -25,13 +25,14 @@ namespace pizzaria_App
 
         private void tilfoej_button_click(object sender, EventArgs e)
         {
+            check_antal_up_down();
             check_listbox();
             this.Close();
         }
 
         #endregion
 
-        #region listbox metoder
+        #region listbox message metoder
 
         private void check_listbox()
         {
@@ -66,7 +67,25 @@ namespace pizzaria_App
             return antal_tilbehoer = tilbehoer_box.Items.Count;
         }
 
-
         #endregion
+
+        private void check_antal_up_down()
+        {
+            if (antal_up_down.Value == 0)
+            {
+                string fejl = "  Fejl! \n Antallet af pizza'er kan ikke være 0";
+                MessageBox.Show(fejl);
+            }
+        }
+
+        private int total_antal_tilbehoer()
+        {
+            int antal_tilbehoer = tilbehoer_box.Items.Count;
+            decimal antal_aendringer = antal_up_down.Value;
+
+            int totale_aendringer = (int) (antal_aendringer + antal_tilbehoer);
+
+            return totale_aendringer;
+        }
     }
 }
